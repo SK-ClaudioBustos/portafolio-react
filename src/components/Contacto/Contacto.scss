@@ -1,18 +1,20 @@
 @use "../../sass/var";
-
+@use "../../sass/mixins";
 .contacto{
     color: var.$b;
+    
+    .container {
+        max-width: 1100px;
+        min-height: 200px;
+        padding: 20px;
 
         .contacto-div {
-            position: absolute;
             max-width: 1100px;
             min-height: 200px;
             padding: 20px;
-            margin-top: 5rem;
+
             background-color: var.$c7;
             border-radius: 10px;
-            box-shadow: 0px 1px 4px 1px var.$b;
-    
             .row {
                 width: 100%;
                 display: flex;
@@ -22,6 +24,7 @@
                     font-size: 2rem;
                     padding: 15px 0;
                     font-family: var.$f1;
+                    @include mixins.sr(472px){font-size: 1.5rem;}
                 }
                 .descripcion {
                     color: var.$b;
@@ -53,7 +56,8 @@
                     }
                 }
             }
-        }  
+        } 
+    } 
 } 
 
 
