@@ -1,0 +1,24 @@
+@use "../../sass/var";
+
+.proyectos-recientes {
+    padding: 40px;
+    margin-bottom: 200px;
+    background-color: var.$b;
+    color: var.$n;
+
+    .seccion-titulo {
+        font-size: 2rem;
+        padding: 15px 0;
+        font-family: var.$f1;
+        color: var.$n;
+    }
+    .seccion-descripcion {
+        font-size: 1.2rem;
+        color: var.$c3;
+    }
+    .proyectos-contenedor {
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
+}
+

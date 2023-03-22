@@ -1,0 +1,17 @@
+@use "../../sass/var";
+@use "../../sass/mixins";
+
+.navbar {
+    padding: 2rem;
+    background-color: var.$c1;
+
+    .navbar-collapse {
+        align-items: center;
+        justify-content: space-between;
+        
+        .navbar-brand {
+            @include mixins.sr(767px){display: none;}
+        }
+    }
+}
+

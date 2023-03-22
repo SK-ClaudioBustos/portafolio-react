@@ -1,0 +1,20 @@
+/* Fuentes */
+@mixin f1 {
+    @font-face {
+        font-family: 'Rubik Dirt';
+        src: url('../fonts/rubik-dirt.ttf');
+    }
+}
+
+@mixin f2 {
+    @font-face {
+        font-family: 'Quicksand';
+        src: url('../fonts/quicksand.ttf');
+    }
+}
+
+@mixin sr($res) { 
+    @media (max-width: $res) { 
+      @content 
+    } 
+};

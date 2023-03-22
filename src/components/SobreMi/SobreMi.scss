@@ -1,0 +1,21 @@
+@use "../../sass/var";
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+    background-color: var.$c2;
+    color: var.$b;
+
+    .contenedor {
+        max-width: 600px;
+
+        .seccion-titulo {
+            font-size: 2rem;
+            padding: 15px 0;
+            font-family: var.$f1;
+        }
+        .seccion-texto {
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@use "../../sass/var";
+
+.experiencia {
+    padding: 40px 40px 60px 60px;
+    background-color: var.$b;
+    color: var.$n;
+
+    .columna {
+        padding: 20px;
+        border: 2px solid var.$c5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.2s ease-in;
+        &:hover {
+            color: var.$b;
+            background-color: var.$c2;
+        }
+
+        .experiencia-titulo {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .badges-contenedor {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+            .badge {
+                margin: 5px;
+            }
+        }
+        i {
+            font-size: 2.5rem;
+            color: var.$c9;
+            background-color: var.$c6;
+            padding: 8px 19px;
+            border-radius: 50%;
+        }
+    }
+}
+
