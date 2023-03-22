@@ -2,7 +2,7 @@ import "./Experiencia.scss";
 
 function Experiencia() {
     return (  
-        <section className="experiencia seccion-clara">
+        <section id="section-exp" className="experiencia seccion-clara">
           <div className="container text-center">
             <div className="row">
 

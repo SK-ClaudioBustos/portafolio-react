@@ -2,7 +2,7 @@ import "./Contacto.scss";
 
 function Contacto() {
     return (  
-        <section className="contacto seccion-oscura">
+        <section id="section-contacto" className="contacto seccion-oscura">
           <div className="container">
             <div className="contacto-div text-center d-flex rectangulo justify-content-evenly">
                 <div className="row">

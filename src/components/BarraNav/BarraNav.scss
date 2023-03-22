@@ -4,14 +4,13 @@
 .navbar {
     padding: 2rem;
     background-color: var.$c1;
-
-    .navbar-collapse {
-        align-items: center;
-        justify-content: space-between;
-        
-        .navbar-brand {
-            @include mixins.sr(767px){display: none;}
-        }
+    .navbar-brand {
+        @include mixins.sr(767px){display: none;}
     }
 }
 
+.navbar-toggler.collapsed i {
+    color: #000;
+    border-radius: 10%;
+    background-color: #6f7070;
+}
