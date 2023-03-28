@@ -1,5 +1,6 @@
 import "./SectionProyectos.scss";
 import Proyecto from "./proyectos/Proyecto";
+import data from "./data";
 
 function SectionProyectos() {
     return (  
@@ -8,9 +9,16 @@ function SectionProyectos() {
           <h3 className="seccion-descripcion">Estos son mis proyectos</h3>
           <div className="container text-center proyectos-contenedor">
             <div className="row">
-                <Proyecto/>
-                <Proyecto/>
-                <Proyecto/>
+                {data.map((proyect,index) => 
+                  <Proyecto 
+                      key={index}
+                      src={proyect["src"]}
+                      titulo={proyect["titulo"]}
+                      git={proyect["git"]}
+                      web={proyect["web"]}
+                  />
+                  )
+                }
             </div>
           </div>
         </section>
