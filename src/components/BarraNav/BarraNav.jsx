@@ -2,7 +2,6 @@ import logo from "./box.svg";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./BarraNav.scss";
 
 function BarraNav(){
@@ -13,10 +12,10 @@ function BarraNav(){
             <img src={logo} width="50" alt="logo de la pagina web"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <i class="bi bi-caret-down"></i>
+            <i className="bi bi-caret-down"></i>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto mt-1">
               <Nav.Link href="#section-sobre-mi">Sobre Mi</Nav.Link>
               <Nav.Link href="#section-exp">Experiencia</Nav.Link>
               <Nav.Link href="#section-proyectos">Proyectos</Nav.Link>

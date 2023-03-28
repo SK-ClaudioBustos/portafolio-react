@@ -1,4 +1,10 @@
 import "./Contacto.scss";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
+
+function copiarPortapeles() {
+  navigator.clipboard.writeText("claudiobustos.sk2000@gmail.com");
+}
 
 function Contacto() {
     return (  
@@ -13,12 +19,16 @@ function Contacto() {
                     Contáctame para iniciar tu proyecto de desarrollo web y con gusto te ayudaré
                   </div>
                   <div className="col-12 col-md-4">
-                    <a href="#">
-                      <button type="button">
-                        Contacto
-                        <i className="bi bi-envelope-check-fill"></i>
-                      </button>
-                    </a>
+                      <OverlayTrigger key="top" placement="top" overlay={
+                          <Tooltip>
+                            Pulse para copiar el email
+                          </Tooltip>
+                      }>
+                        <button type="button" onClick={() => copiarPortapeles()}>
+                          Contacto
+                          <i className="bi bi-envelope-check-fill"></i>
+                        </button>
+                      </OverlayTrigger>
                   </div>
                 </div>
               </div>
