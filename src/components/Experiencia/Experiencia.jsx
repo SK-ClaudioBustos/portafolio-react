@@ -14,12 +14,12 @@ function Experiencia() {
                   Estos son mis conocimientos tecnológicos.
                 </p>
                 <div className="badges-contenedor">
-                  <span className="badge rounded-pill text-bg-primary">HMTL</span>
-                  <span className="badge rounded-pill text-bg-primary">CSS</span>
-                  <span className="badge rounded-pill text-bg-primary">Javascript</span>
-                  <span className="badge rounded-pill text-bg-primary">React</span>
-                  <span className="badge rounded-pill text-bg-primary">Bootstrap</span>
-                  <span className="badge rounded-pill text-bg-primary">Sass</span>
+                  <span className="badge rounded-pill">HMTL</span>
+                  <span className="badge rounded-pill">CSS</span>
+                  <span className="badge rounded-pill">Javascript</span>
+                  <span className="badge rounded-pill">React</span>
+                  <span className="badge rounded-pill">Bootstrap</span>
+                  <span className="badge rounded-pill">Sass</span>
                 </div>
               </div>
 
@@ -31,12 +31,12 @@ function Experiencia() {
                   Tambien poseo conocimientos en algunos lenguajes de programación/consulta.
                 </p>
                 <div className="badges-contenedor">
-                  <span className="badge rounded-pill text-bg-primary">PHP</span>
-                  <span className="badge rounded-pill text-bg-primary">Laravel</span>
-                  <span className="badge rounded-pill text-bg-primary">Python</span>
-                  <span className="badge rounded-pill text-bg-primary">Java</span>
-                  <span className="badge rounded-pill text-bg-primary">C++</span>
-                  <span className="badge rounded-pill text-bg-primary">SQL</span>
+                  <span className="badge rounded-pill ">PHP</span>
+                  <span className="badge rounded-pill ">Laravel</span>
+                  <span className="badge rounded-pill ">Python</span>
+                  <span className="badge rounded-pill ">Java</span>
+                  <span className="badge rounded-pill ">C++</span>
+                  <span className="badge rounded-pill ">SQL</span>
                 </div>
               </div>
             </div>

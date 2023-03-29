@@ -2,7 +2,7 @@
 
 .proyectos-recientes {
     padding: 40px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     background-color: var.$b;
     color: var.$n;
 
@@ -22,3 +22,14 @@
     }
 }
 
+.sec-proy-dark {
+    background-color: var.$c6;
+    color: var.$b;
+
+    .seccion-titulo {
+        color: var.$b;
+    }
+    .seccion-descripcion {
+        color: var.$c8;
+    }
+}

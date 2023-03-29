@@ -4,7 +4,7 @@ import "./UpButton.scss";
 function UpButton(){
     window.onscroll = function() {
         let altura_pagina = window.scrollY;
-        if (altura_pagina >= 300){
+        if (altura_pagina >= 200){
             document.getElementById("up-div").style.display = 'flex';
             document.getElementById("up-div").style.alignItems = "center";
             document.getElementById("up-div").style.justifyContent = "center";

@@ -1,8 +1,8 @@
 @use "../../sass/var";
 
 .experiencia {
-    margin-top: 50px;
-    margin-bottom: 70px;
+    // margin-top: 50px;
+    // margin-bottom: 70px;
     padding: 40px 40px 60px 60px;
     background-color: var.$b;
     color: var.$n;
@@ -30,6 +30,7 @@
             font-weight: bold;
             margin: 10px 0;
             .badge {
+                background-color: var.$c7;
                 margin: 5px;
             }
         }
@@ -43,3 +44,26 @@
     }
 }
 
+.exp-dark {
+    background-color: var.$c6;
+    color: var.$b;
+
+    .columna {
+        border-color: var.$b;
+        &:hover {
+            color: var.$n;
+            background-color: var.$b;
+        }
+
+        i {
+            color: var.$b;
+            background-color: var.$c5;
+        }
+        .badges-contenedor {
+            .badge {
+                color: var.$c11;
+                background-color: var.$c8;
+            }
+        }
+    }
+}

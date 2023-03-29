@@ -3,13 +3,37 @@
 
 .navbar {
     padding: 2rem;
-    background-color: var.$c1;
+    background-color: var.$c10;
     .navbar-brand {
-        @include mixins.sr(767px){display: none;}
+        height: 50px;
+        width: 50px;
+        background-color: var.$c10;
+        border-radius: 50%;
+    }
+    .nav-link {
+        &.active {
+            color: var.$n;
+        }
     }
 }
 
 .navbar-toggler.collapsed i {
-    color: #000;
+    color: var.$n;
     border-radius: 10%;
+}
+
+.nav-dark {
+    background-color: var.$n;
+    .navbar-toggler {
+        background-color: var.$b;
+    }
+    .navbar-brand {
+        color: var.$b;
+    }
+    .nav-link {
+        color: var.$b;
+        &.active {
+            color: var.$c8;
+        }
+    }
 }

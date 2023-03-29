@@ -3,7 +3,7 @@ import "./SeccionHero.scss";
 
 function SeccionHero(){
     return(
-        <section className="hero align-items-stretch">
+        <section id="sec-hero" className="hero align-items-stretch">
             <div className="hero-principal d-flex flex-column justify-content-center align-items-center">
                 <img className="hero-imagen rounded-circle" src={profile} alt="Foto de Claudio Bustos"/>
                 <h1>Hola, soy Claudio Bustos</h1>

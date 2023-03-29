@@ -1,5 +1,6 @@
 @use "../../sass/var";
 @use "../../sass/mixins";
+
 .contacto{
     color: var.$b;
     
@@ -60,7 +61,36 @@
     } 
 } 
 
-
+.cont-dark{
+    color: var.$c1;
+    background-color: var.$c6;
+    .container {
+        .contacto-div {
+            background-color: var.$c2;
+            .row {
+                .descripcion {
+                    color: var.$c1;
+                }
+                div {
+                    button {
+                        color: var.$c1;
+                        border: 2px solid var.$c1;
+                        &:hover {
+                            background-color: var.$c11;
+                            color: var.$c1;
+                            i {
+                                color: var.$c1;
+                            }
+                        }
+                        i {
+                            color: var.$c1;
+                        }
+                    }
+                }
+            }
+        } 
+    } 
+}
 
 
 

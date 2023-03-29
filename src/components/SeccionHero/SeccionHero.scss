@@ -14,6 +14,7 @@
             margin: 20px;
             border: 1px solid var.$n;
             background-color: var.$n;
+            color: var.$b;
         }
 
         h1{
@@ -28,5 +29,19 @@
     }
 }
 
-
+.hero-dark {
+    background-color: var.$c6;
+    .hero-principal {
+        .hero-imagen {
+            background-color: var.$c2;
+        }
+        h1 {
+            color: var.$c10;
+        }
+    
+        h2 {
+            color: var.$c1;
+        }
+    }
+}
 

@@ -8,7 +8,7 @@
     width: 50px;
     border-radius: 50%;
     background-color: var.$b;
-    border: 1px solid var.$n;
+    border: 3px solid var.$n;
     position: fixed;
     z-index: 2;
 
@@ -27,5 +27,13 @@
         height: 50px;
         width: 50px;
         color: var.$n;
+    }
+}
+
+.up-dark {
+    background-color: var.$c11;
+    border: 3px solid var.$c10;
+    .up-icon {
+        color: var.$c10;
     }
 }

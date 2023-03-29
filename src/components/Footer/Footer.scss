@@ -5,7 +5,9 @@ footer {
     background-color: var.$c2;
     color: var.$b;
 
-    a {
+    #a-logo {
+        background-color: var.$c2;
+        border-radius: 50%;
         .footer-logo{
             height: 80px;
             width: 80px;
@@ -53,4 +55,34 @@ footer {
     }
 }
 
+
+.foot-dark {
+    background-color: var.$n;
+    color: var.$b;
+
+    #a-logo {
+        background-color: var.$c1;
+    }
+    .iconos-redes-sociales {
+        a {
+            border: 2px solid var.$b;
+            &:hover{
+                background-color: var.$b;
+                border: 2px solid var.$b;
+                i {
+                    color: var.$n;
+                }
+            }
+
+            i {
+                color: var.$b;
+            }
+        }
+        
+        
+    }
+    .derechos-de-autor {
+        color: var.$c8;
+    }
+}
 
