@@ -4,6 +4,7 @@
 div {
     .proyecto {
         position: relative;
+        border: 2px solid var.$b;
         &:hover {
             img {
                 opacity: 0.2;
