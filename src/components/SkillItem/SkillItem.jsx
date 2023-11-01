@@ -1,10 +1,10 @@
-import "../Experiencia/Experiencia.scss";
+import "../Skill/Skill.scss";
 
-const ExperienciaItem = ({ titulo, cuerpo, icono, items = [] }) => {
+const SkillItem = ({ titulo, cuerpo, icono, items = [] }) => {
     return (
         <div className="columna col-12 col-md-6">
             <i className={`bi bi-${icono}`}></i>
-            <p className="experiencia-titulo">{titulo}</p>
+            <p className="skill-titulo">{titulo}</p>
             <p>
                 {cuerpo}
             </p>
@@ -19,4 +19,4 @@ const ExperienciaItem = ({ titulo, cuerpo, icono, items = [] }) => {
     )
 }
 
-export default ExperienciaItem;
+export default SkillItem;

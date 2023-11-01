@@ -1,15 +1,15 @@
-import "./Experiencia.scss";
-import ExperienciaItem from "../ExperienciaItem/ExperienciaItem";
+import "./Skill.scss";
+import SkillItem from "../SkillItem/SkillItem";
 import itemsData from "./itemsData";
 
-function Experiencia() {
+function Skill() {
   return (
-    <section id="section-exp" className="experiencia seccion-clara">
+    <section id="section-exp" className="skill seccion-clara">
       <div className="container text-center">
         <div className="row">
           {
             itemsData.map((item,key) => (
-              <ExperienciaItem
+              <SkillItem
                 key={key}
                 titulo={item["titulo"]}
                 cuerpo={item["cuerpo"]}
@@ -24,4 +24,4 @@ function Experiencia() {
   );
 }
 
-export default Experiencia;
+export default Skill;
