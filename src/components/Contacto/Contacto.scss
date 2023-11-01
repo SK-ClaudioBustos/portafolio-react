@@ -32,27 +32,32 @@
                     font-size: 1.2rem;
                 }
                 div {
-                    button {
-                        color: var.$b;
-                        font-weight: bold;
-                        background-color: transparent;
-                        border: 2px solid var.$b;
-                        padding: 1.25rem 2em;
-                        margin: 10px;
-                        border-radius: 100px;
-                        transition: all 0.2s ease-in-out;
-                        &:hover {
-                            background-color: var.$b;
-                            color: var.$n;
-                            i {
-                                color: var.$n;
-                            }
-                        }
-                    
-                        i {
+                    .anchorContact {
+                        color: transparent;
+                        cursor: default;
+
+                        button {
                             color: var.$b;
-                            font-size: 1.3rem;
+                            font-weight: bold;
+                            background-color: transparent;
+                            border: 2px solid var.$b;
+                            padding: 1rem 2em 1.25rem 2em;
+                            margin: 0 10px 10px 10px;
+                            border-radius: 100px;
                             transition: all 0.2s ease-in-out;
+                            &:hover {
+                                background-color: var.$b;
+                                color: var.$n;
+                                i {
+                                    color: var.$n;
+                                }
+                            }
+                        
+                            i {
+                                color: var.$b;
+                                font-size: 1.3rem;
+                                transition: all 0.2s ease-in-out;
+                            }
                         }
                     }
                 }

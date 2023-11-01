@@ -8,8 +8,9 @@ function Experiencia() {
       <div className="container text-center">
         <div className="row">
           {
-            itemsData.map((item) => (
+            itemsData.map((item,key) => (
               <ExperienciaItem
+                key={key}
                 titulo={item["titulo"]}
                 cuerpo={item["cuerpo"]}
                 icono={item["icono"]}
