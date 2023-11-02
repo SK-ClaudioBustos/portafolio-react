@@ -19,8 +19,8 @@ function Contacto() {
                 rel="noopener noreferrer"
                 href='&#109;ailto&#58;c&#37;&#54;C%61udio%62u%73%74o&#115;&#46;&#115;&#107;20&#48;0&#64;%67&#109;&#97;il&#46;c&#37;6F&#37;6D'>claudiobustos&#46;sk2000&#64;gmail&#46;&#99;om
                 <button type="button">
-                  Contacto
-                  <i className="bi bi-envelope-check-fill"></i>
+                <i className="bi bi-envelope-check-fill"/>
+                  {" Contacto"}
                 </button>
               </a>
             </div>
