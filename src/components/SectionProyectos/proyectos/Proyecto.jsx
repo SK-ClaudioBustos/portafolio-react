@@ -1,7 +1,6 @@
 import "./Proyecto.scss";
 
 function Proyecto({src,alt,titulo,git,web}) {
-    console.log(web==="#");
     return ( 
         <div className="col-12 col-md-6 col-lg-4">
             <div id="proyecto" className="proyecto">

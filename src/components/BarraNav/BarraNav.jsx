@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import ColorButton from "../ColorButton/ColorButton";
 import "./BarraNav.scss";
 
-function BarraNav(){
+function BarraNav({isDarkMode,setIsDarkMode}){
     return (
       <Navbar id="inicio" className="navbar" expand="lg">
         <Container>
@@ -21,7 +21,7 @@ function BarraNav(){
               <Nav.Link className="nav-link" href="#section-exp">Experiencia</Nav.Link>
               <Nav.Link className="nav-link" href="#section-proyectos">Proyectos</Nav.Link>
               <Nav.Link className="nav-link" href="#section-contacto">Contacto</Nav.Link>
-              <Nav.Link><ColorButton/></Nav.Link>
+              <Nav.Link><ColorButton isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

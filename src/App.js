@@ -7,26 +7,32 @@ import Contacto from "./components/Contacto/Contacto";
 import Footer from "./components/Footer/Footer";
 import UpButton from "./components/UpButton/UpButton";
 import mode from "./components/ColorButton/dark-mode";
+import { useState, useEffect } from 'react';
 import './App.scss';
 
 
-function verifyMode() {
-  const flag = localStorage.getItem("darkMode");
+function verifyMode(isDarkMode,setIsDarkMode) {
+  const darkMode = localStorage.getItem("darkMode");
 
-  if (flag === null) {
-    localStorage.setItem("darkMode", false);
+  if (darkMode === null) {
+    localStorage.setItem("darkMode", isDarkMode);
   }
   else {
-    mode();
+    mode(darkMode);
+    setIsDarkMode(darkMode);
   }
 }
 
 
 function App() {
-  verifyMode();
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  useEffect(() => {
+    verifyMode(isDarkMode,setIsDarkMode);
+  }, [])
+
   return (
     <div className="App">
-      <BarraNav />
+      <BarraNav isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <SeccionHero />
       <SobreMi />
       <Skill />
