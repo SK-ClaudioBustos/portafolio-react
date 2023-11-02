@@ -7,7 +7,7 @@ import Contacto from "./components/Contacto/Contacto";
 import Footer from "./components/Footer/Footer";
 import UpButton from "./components/UpButton/UpButton";
 import mode from "./components/ColorButton/dark-mode";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.scss';
 
 
@@ -26,9 +26,7 @@ function verifyMode(isDarkMode,setIsDarkMode) {
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  useEffect(() => {
-    verifyMode(isDarkMode,setIsDarkMode);
-  }, [])
+  verifyMode(isDarkMode,setIsDarkMode);
 
   return (
     <div className="App">
