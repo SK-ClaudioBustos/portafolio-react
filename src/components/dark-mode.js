@@ -1,4 +1,4 @@
-function mode(isDarkMode) {
+function mode(state) {
     const btnSwitch = document.querySelector('#switch');
     const nav = document.getElementById("inicio");
     const hero = document.getElementById("sec-hero");
@@ -9,7 +9,7 @@ function mode(isDarkMode) {
     const cont = document.getElementById("section-contacto");
     const foot = document.getElementById("final");
     const up = document.getElementById("up-div");
-    if (isDarkMode) {
+    if (state === "true") {
         nav?.classList.add("nav-dark");
         hero?.classList.add("hero-dark");
         mi?.classList.add("mi-dark");
@@ -19,7 +19,7 @@ function mode(isDarkMode) {
         cont?.classList.add("cont-dark");
         foot?.classList.add("foot-dark");
         up?.classList.add("up-dark");
-        localStorage.setItem("darkMode",true);
+        // localStorage.setItem("darkMode",isDarkMode);
         btnSwitch?.classList.add("active");
     }
     else {
@@ -32,7 +32,7 @@ function mode(isDarkMode) {
         cont?.classList.remove("cont-dark");
         foot?.classList.remove("foot-dark");
         up?.classList.remove("up-dark");
-        localStorage.setItem("darkMode",false);
+        // localStorage.setItem("darkMode",isDarkMode);
         btnSwitch?.classList.remove("active");
     }
     

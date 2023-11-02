@@ -1,12 +1,14 @@
 import React from "react";
 import "./ColorButton.scss";
-import mode from "./dark-mode.js";
+import mode from "../dark-mode.js";
 
 
 function ColorButton({isDarkMode,setIsDarkMode}) {
     const handleChange = () => {
-        setIsDarkMode(!isDarkMode);
-        mode(isDarkMode);
+        const state = isDarkMode==="true" ? "false" : "true";
+        setIsDarkMode(state);
+        localStorage.setItem("darkMode", state);
+        mode(state);
     } 
 
     return (
