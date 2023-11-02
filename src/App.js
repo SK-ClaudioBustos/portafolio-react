@@ -25,10 +25,10 @@ function verifyMode(isDarkMode,setIsDarkMode) {
 
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  useEffect(() => {
-    verifyMode(isDarkMode,setIsDarkMode);
-  }, [])
+  // const [isDarkMode, setIsDarkMode] = useState(false);
+  // useEffect(() => {
+  //   verifyMode(isDarkMode,setIsDarkMode);
+  // }, [])
 
   return (
     <div className="App">
