@@ -1,0 +1,21 @@
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+  background-color: #1b1b32;
+  color: #fff;
+}
+.sobre-mi .contenedor {
+  max-width: 600px;
+}
+.sobre-mi .contenedor .seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", cursive;
+}
+.sobre-mi .contenedor .seccion-texto {
+  font-size: 1.2rem;
+}
+
+.mi-dark {
+  background-color: #000;
+}/*# sourceMappingURL=SobreMi.css.map */

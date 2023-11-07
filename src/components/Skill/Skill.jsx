@@ -4,7 +4,7 @@ import itemsData from "./itemsData";
 
 function Skill() {
   return (
-    <section id="section-exp" className="skill seccion-clara">
+    <section id="section-skill" className="skill seccion-clara">
       <div className="container text-center">
         <div className="row">
           {

@@ -1,6 +1,6 @@
 import "./SectionProyectos.scss";
 import Proyecto from "./proyectos/Proyecto";
-import data from "./data";
+import data from "./proyect_data";
 
 function SectionProyectos() {
     return (  

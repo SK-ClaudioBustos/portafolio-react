@@ -18,7 +18,8 @@ function BarraNav({isDarkMode,setIsDarkMode}){
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link className="nav-link" href="#section-sobre-mi">Sobre Mi</Nav.Link>
-              <Nav.Link className="nav-link" href="#section-exp">Experiencia</Nav.Link>
+              <Nav.Link className="nav-link" href="#section-skill">Habilidades</Nav.Link>
+              <Nav.Link className="nav-link" href="#section-exp">Experiencias</Nav.Link>
               <Nav.Link className="nav-link" href="#section-proyectos">Proyectos</Nav.Link>
               <Nav.Link className="nav-link" href="#section-contacto">Contacto</Nav.Link>
               <Nav.Link><ColorButton isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/></Nav.Link>

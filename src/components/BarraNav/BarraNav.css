@@ -1,0 +1,35 @@
+/* Fuentes */
+.navbar {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+.navbar .navbar-brand {
+  height: 50px;
+  width: 50px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+}
+.navbar .nav-link.active {
+  color: #000;
+}
+
+.navbar-toggler.collapsed i {
+  color: #000;
+  border-radius: 10%;
+}
+
+.nav-dark {
+  background-color: #000;
+}
+.nav-dark .navbar-toggler {
+  background-color: #fff;
+}
+.nav-dark .navbar-brand {
+  color: #fff;
+}
+.nav-dark .nav-link {
+  color: #fff;
+}
+.nav-dark .nav-link.active {
+  color: #aeaeae;
+}/*# sourceMappingURL=BarraNav.css.map */

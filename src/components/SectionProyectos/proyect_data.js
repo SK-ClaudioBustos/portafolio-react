@@ -2,7 +2,7 @@ let data = [
     {
         src: "proyecto_1",
         alt: "imagen de proyecto 1",
-        titulo: "Proyecto 1",
+        titulo: "Wiki Proyect",
         git: "https://github.com/SK-ClaudioBustos/star-wars-clone-wars-website",
         web: "https://proyect1-beta.vercel.app/",
     },

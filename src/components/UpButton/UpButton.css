@@ -1,0 +1,35 @@
+.up-div {
+  display: none;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #000;
+  position: fixed;
+  z-index: 2;
+}
+.up-div .up-a {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 5;
+}
+.up-div .up-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  color: #000;
+}
+
+.up-dark {
+  background-color: #141313;
+  border: 3px solid #f8f9fa;
+}
+.up-dark .up-icon {
+  color: #f8f9fa;
+}/*# sourceMappingURL=UpButton.css.map */
