@@ -4,7 +4,7 @@ import data from "./experienciasData.js";
 
 const SeccionExperiencia = () => {
     return (
-        <section id="section-exp">
+        <section id="section-exp" className="section-exp">
             <h2 className="experiencia-titulo">Experiencias</h2>
                 { 
                 data.map(({ lugar, duracion, puesto, descripcion }, key) => (

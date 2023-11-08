@@ -1,77 +1,134 @@
 @use "../../sass/var";
 @use "../../sass/mixins";
 
-.experiencia-titulo {
-    font-size: 2rem;
-    padding: 15px 0;
-    font-family: var.$f1;
-    color: var.$n;
-}
+.section-exp {
 
-.experiencia-container {
-    margin-top: 50px;
-    border: 1px var.$c3 solid;
-    background-color: var.$c1;
-    padding: 25px 10px;
-    min-height: 200px;
-    transition: all 0.2s ease-in;
-    border-radius: 5px;
-    
-    @include mixins.sr(576px) {
-        padding: 0;
-        margin: 0;
-        width: 330px;
-        margin-bottom: 40px;
+    .experiencia-titulo {
+        font-size: 2rem;
+        padding: 15px 0;
+        font-family: var.$f1;
+        color: var.$n;
     }
 
-    &:hover {
-        color: var.$c7;
-        border-bottom: 5px var.$c7 solid;
-    }
+    .experiencia-container {
+        margin-top: 50px;
+        border: 1px var.$c3 solid;
+        background-color: var.$c1;
+        padding: 25px 10px;
+        min-height: 220px;
+        transition: all 0.2s ease-in;
+        border-radius: 5px;
 
-    .experiencia-row {
-        font-family: var.$f2;
-
-        @include mixins.sr(768px) {
-            padding: 0px;
+        @include mixins.sr(576px) {
+            padding: 0;
             margin: 0;
-            text-align: center;
+            width: 330px;
+            margin-bottom: 40px;
         }
 
-        .experiencia-col {
+        &:hover {
+            color: var.$c7;
+            border-bottom: 5px var.$c7 solid;
+        }
 
-            .ms-4 {
-                @include mixins.sr(576px) {
-                    margin: 10px 0 0 0 !important;
-                }
+        .experiencia-row {
+            font-family: var.$f2;
+
+            @include mixins.sr(768px) {
+                padding: 0px;
+                margin: 0;
+                text-align: center;
             }
 
-            .experiencia-lugar {
-                color: var.$c11;
-                @include mixins.sr(576px) {
-                    font-size: 20px;
+            .experiencia-col {
+
+                .ms-4 {
+                    @include mixins.sr(576px) {
+                        margin: 10px 0 0 0 !important;
+                    }
+                }
+
+                .experiencia-lugar {
+                    color: var.$c11;
+
+                    @include mixins.sr(576px) {
+                        font-size: 20px;
+                    }
+                }
+
+                .experiencia-puesto {
+                    color: var.$c4;
+
+                    @include mixins.sr(576px) {
+                        font-size: 15px;
+                    }
+                }
+
+                .experiencia-duracion {
+                    color: var.$c3;
+
+                    @include mixins.sr(576px) {
+                        font-size: 15px;
+                    }
+                }
+
+                .experiencia-descripcion {
+                    font-size: 1rem;
+
+                    @include mixins.sr(576px) {
+                        font-size: 13px;
+                    }
                 }
             }
+        }
+    }
+}
 
-            .experiencia-puesto {
-                @include mixins.sr(576px) {
-                    font-size: 15px;
+
+.exp-dark {
+    background-color: var.$c6;
+
+    .experiencia-titulo {
+        color: var.$b;
+    }
+
+    .experiencia-container {
+        border-color: var.$c12;
+        background-color: var.$n;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            color: var.$c10;
+            border-bottom: 5px var.$b solid;
+
+            .experiencia-row {
+                .experiencia-col {
+                    .experiencia-descripcion {
+                        color: var.$c10;
+                    }
                 }
-                color: var.$c4;
             }
+        }
 
-            .experiencia-duracion {
-                @include mixins.sr(576px) {
-                    font-size: 15px;
-                }
-                color: var.$c3;
-            }
+        .experiencia-row {
 
-            .experiencia-descripcion {
-                @include mixins.sr(576px) {
-                    font-size: 13px;
+            .experiencia-col {
+
+                .experiencia-lugar {
+                    color: var.$c10;
                 }
-                font-size: 1rem;
+
+                .experiencia-puesto {
+                    color: var.$c1;
+                }
+
+                .experiencia-duracion {
+                    color: var.$c8;
+                }
+
+                .experiencia-descripcion {
+                    color: var.$c4;
+                }
             }
         }
     }
