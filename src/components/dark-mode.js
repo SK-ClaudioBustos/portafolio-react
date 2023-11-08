@@ -3,7 +3,7 @@ function mode(state) {
     const nav = document.getElementById("inicio");
     const hero = document.getElementById("sec-hero");
     const mi = document.getElementById("section-sobre-mi");
-    const exp = document.getElementById("section-exp");
+    const skill = document.getElementById("section-skill");
     const sec_proy = document.getElementById("section-proyectos");
     const proy = document.getElementById("proyecto");
     const cont = document.getElementById("section-contacto");
@@ -13,7 +13,7 @@ function mode(state) {
         nav?.classList.add("nav-dark");
         hero?.classList.add("hero-dark");
         mi?.classList.add("mi-dark");
-        exp?.classList.add("exp-dark");
+        skill?.classList.add("skill-dark");
         sec_proy?.classList.add("sec-proy-dark");
         sec_proy?.classList.add("proyecto-dark");
         cont?.classList.add("cont-dark");
@@ -26,7 +26,7 @@ function mode(state) {
         nav?.classList.remove("nav-dark");
         hero?.classList.remove("hero-dark");
         mi?.classList.remove("mi-dark");
-        exp?.classList.remove("exp-dark");
+        skill?.classList.remove("skill-dark");
         sec_proy?.classList.remove("sec-proy-dark");
         proy?.classList.remove("proyecto-dark");
         cont?.classList.remove("cont-dark");
