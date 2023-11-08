@@ -6,11 +6,13 @@ const SeccionExperiencia = () => {
     return (
         <section id="section-exp" className="section-exp">
             <h2 className="experiencia-titulo">Experiencias</h2>
-                { 
-                data.map(({ lugar, duracion, puesto, descripcion }, key) => (
-                    <ExperienciaCard key={key} lugar={lugar} duracion={duracion} puesto={puesto} descripcion={descripcion}/>
-                ))
+            <div className="experiencia-div">
+                {
+                    data.map(({ lugar, duracion, puesto, descripcion }, key) => (
+                        <ExperienciaCard key={key} lugar={lugar} duracion={duracion} puesto={puesto} descripcion={descripcion} />
+                    ))
                 }
+            </div>
         </section>
     )
 }
