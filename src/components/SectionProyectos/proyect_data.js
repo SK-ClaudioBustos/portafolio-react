@@ -1,32 +1,39 @@
-let data = [
-    {
-        src: "proyecto_1",
-        alt: "imagen de proyecto 1",
-        titulo: "Wiki Proyect",
-        git: "https://github.com/SK-ClaudioBustos/star-wars-clone-wars-website",
-        web: "https://proyect1-beta.vercel.app/",
-    },
-    // {
-    //     src: "proyecto_2",
-    //     alt: "imagen de proyecto 2",
-    //     titulo: "Proyecto 2",
-    //     git: "https://github.com/SK-ClaudioBustos/gun-shop",
-    //     web: "https://proyect-2-gun-shop.netlify.app/",
-    // },
-    {
-        src: "proximamente",
-        alt: "imagen de proximamente otro proyecto",
-        titulo: "Proyecto 2",
-        git: "#",
-        web: "#",
-    },
-    {
-        src: "proximamente",
-        alt: "imagen de proximamente otro proyecto",
-        titulo: "Proyecto 3",
-        git: "#",
-        web: "#",
-    }
-]
+import { useTranslation } from "react-i18next";
 
-export default data;
+const useGetData = () => {
+    const { t } = useTranslation("global");
+    const data = [
+        {
+            src: "proyecto_1",
+            alt: t("proyects.p1"),
+            titulo: "Wiki Proyect",
+            git: "https://github.com/SK-ClaudioBustos/star-wars-clone-wars-website",
+            web: "https://proyect1-beta.vercel.app/",
+        },
+        // {
+        //     src: "proyecto_2",
+        //     alt: "imagen de proyecto 2",
+        //     titulo: "Proyecto 2",
+        //     git: "https://github.com/SK-ClaudioBustos/gun-shop",
+        //     web: "https://proyect-2-gun-shop.netlify.app/",
+        // },
+        {
+            src: "proximamente",
+            alt: t("proyects.default"),
+            titulo: t("proyects.default-title"),
+            git: "#",
+            web: "#",
+        },
+        {
+            src: "proximamente",
+            alt: t("proyects.default"),
+            titulo: t("proyects.default-title"),
+            git: "#",
+            web: "#",
+        }
+    ]
+
+    return data;
+}
+
+export default useGetData;

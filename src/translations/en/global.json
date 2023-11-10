@@ -1,0 +1,61 @@
+{
+    "navbar": {
+        "about-me": "About me",
+        "skills": "Skills",
+        "experiencies": "Experiences",
+        "projects": "Proyects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "h1": "Hi there, i am Claudio Bustos",
+        "h2": "Web Developer - Frontend",
+        "photo": "claudio bustos photo"
+    },
+    "about-me": {
+        "title": "Meet Claudio Bustos",
+        "introduction": "I am a Systems Analyst student, I am dedicated to software development, at the moment I am studying a Systems Analyst career and doing an internship, among my hobbies I like to draw, do calisthenics and distract myself with video games"
+    },
+    "skills": {
+        "s1": {
+            "title": "Web Development",
+            "body": "These are my Frontend technology skills."
+        },
+        "s2": {
+            "title": "Other Knowledge",
+            "body": "I also have knowledge in other technologies"
+        }
+    },
+    "exp":{
+        "title": "Experiencies",
+        "e1": {
+            "place": "Public Prosecutor's Office - Paraná",
+            "duration": "2023 - Present",
+            "job": "Intern",
+            "description": "I am in charge of developing functional generic components and creating functions that are then incorporated into the main system, I do this using Next js, in addition to other technologies such as JsonForms and MUI Component Library, I also create microservices to maintain a Graphql API that uses MongoDb."
+        },
+        "e2": {
+            "place": "Kinefitness - General Ramírez",
+            "duration": "2023 - Present",
+            "job": "Freelancer Developer",
+            "description": "I am developing a multi-user web system with client/server architecture using the Laravel framework based on PHP."
+        }
+    },
+    "proyects": {
+        "title": "My recent projects",
+        "description": "These are my projects",
+        "p1": "project image 1",
+        "default": "image of another project coming soon",
+        "default-title": "Coming soon"
+    },
+    "contact": {
+        "t1": "Let's talk",
+        "t2": "Contact me to start your web development project and I will be glad to help you.",
+        "t3": "Contact"
+    },
+    "footer": {
+        "logo": "portfolio logo",
+        "t1": "I learn and create every day.",
+        "t2": "Let's create a project together.",
+        "by": "Created by Claudio Bustos"
+    }
+}

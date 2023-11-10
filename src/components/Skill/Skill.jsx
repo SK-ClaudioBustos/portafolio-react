@@ -1,8 +1,9 @@
-import "./Skill.scss";
 import SkillItem from "../SkillItem/SkillItem";
-import itemsData from "./itemsData";
+import useGetData from "./itemsData";
+import "./Skill.scss";
 
 function Skill() {
+  const itemsData = useGetData();
   return (
     <section id="section-skill" className="skill seccion-clara">
       <div className="container text-center">

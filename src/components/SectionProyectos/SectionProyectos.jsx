@@ -1,12 +1,15 @@
-import "./SectionProyectos.scss";
 import Proyecto from "./proyectos/Proyecto";
-import data from "./proyect_data";
+import useGetData from "./proyect_data";
+import { useTranslation } from "react-i18next";
+import "./SectionProyectos.scss";
 
 function SectionProyectos() {
+    const data = useGetData();
+    const { t } = useTranslation("global");
     return (  
         <section id="section-proyectos" className="proyectos-recientes seccion-clara d-flex flex-column">
-          <h2 className="seccion-titulo">Mis proyectos recientes</h2>
-          <h3 className="seccion-descripcion">Estos son mis proyectos</h3>
+          <h2 className="seccion-titulo">{t("proyects.title")}</h2>
+          <h3 className="seccion-descripcion">{t("proyects.description")}</h3>
           <div className="container text-center proyectos-contenedor">
             <div className="row">
                 {data.map((proyect,index) => 

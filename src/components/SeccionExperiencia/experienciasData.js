@@ -1,16 +1,24 @@
-const data = [
-    {
-        lugar: "Ministerio Público Fiscal - Paraná",
-        duracion: "2023 - Actualidad",
-        puesto: "Pasante",
-        descripcion: 'Estoy a cargo de realizar el desarrollo de componentes genéricos funcionales y la creación de funciones que luego se incorporan dentro del sistema principal, esto lo hago utilizando Next js, ademas de contar con otras tecnologías como JsonForms y MUI Component Library, también creo microservicios para mantener una API Graphql que usa MongoDb.'
-    },
-    {
-        lugar: "Kinefitness - General Ramírez",
-        duracion: "2023 - Actualidad",
-        puesto: "Desarrollador Freelancer",
-        descripcion: 'Me encuentro realizando el desarrollo de un sistema web multiusuario de arquitectura cliente/servidor utilizando el framework Laravel basado en PHP.'
-    },
-];
+import { useTranslation } from "react-i18next";
 
-export default data;
+const useGetData = () => {
+    const {t} = useTranslation("global");
+
+    const data = [
+        {
+            lugar: t("exp.e1.place"),
+            duracion: t("exp.e1.duration"),
+            puesto: t("exp.e1.job"),
+            descripcion: t("exp.e1.description")
+        },
+        {
+            lugar: t("exp.e2.place"),
+            duracion: t("exp.e2.duration"),
+            puesto: t("exp.e2.job"),
+            descripcion: t("exp.e2.description")
+        },
+    ];
+
+    return data;
+}
+
+export default useGetData;

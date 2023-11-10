@@ -3,9 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ColorButton from "../ColorButton/ColorButton";
+import LangButton from "../Langbutton/LangButton";
+import { useTranslation } from "react-i18next";
 import "./BarraNav.scss";
 
 function BarraNav({isDarkMode,setIsDarkMode}){
+
+  const {t} = useTranslation("global");
     return (
       <Navbar id="inicio" className="navbar" expand="lg">
         <Container>
@@ -17,12 +21,13 @@ function BarraNav({isDarkMode,setIsDarkMode}){
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className="nav-link" href="#section-sobre-mi">Sobre Mi</Nav.Link>
-              <Nav.Link className="nav-link" href="#section-skill">Habilidades</Nav.Link>
-              <Nav.Link className="nav-link" href="#section-exp">Experiencias</Nav.Link>
-              <Nav.Link className="nav-link" href="#section-proyectos">Proyectos</Nav.Link>
-              <Nav.Link className="nav-link" href="#section-contacto">Contacto</Nav.Link>
+              <Nav.Link className="nav-link text-center" href="#section-sobre-mi">{t("navbar.about-me")}</Nav.Link>
+              <Nav.Link className="nav-link text-center" href="#section-skill">{t("navbar.skills")}</Nav.Link>
+              <Nav.Link className="nav-link text-center" href="#section-exp">{t("navbar.experiencies")}</Nav.Link>
+              <Nav.Link className="nav-link text-center" href="#section-proyectos">{t("navbar.projects")}</Nav.Link>
+              <Nav.Link className="nav-link text-center" href="#section-contacto">{t("navbar.contact")}</Nav.Link>
               <Nav.Link><ColorButton isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/></Nav.Link>
+              <LangButton/>
             </Nav>
           </Navbar.Collapse>
         </Container>
