@@ -6,9 +6,11 @@ const LangButton = () => {
     const changeLanguage = () => {
         if (i18n.language === "es") {
             i18n.changeLanguage("en");
+            localStorage.setItem("lang","en");
         }
         else {
             i18n.changeLanguage("es");
+            localStorage.setItem("lang","es");
         }
     }
     return (

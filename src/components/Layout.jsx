@@ -8,30 +8,21 @@ import Footer from "./Footer/Footer";
 import UpButton from "./UpButton/UpButton";
 import SeccionExperiencia from "./SeccionExperiencia/SeccionExperiencia";
 import { useState, useEffect } from 'react';
-import mode from "./dark-mode.js";
+import verifyMode from "./functions/verifyMode";
+import verifyLang from "./functions/verifyLang";
+import { useTranslation } from "react-i18next";
 
-const verifyMode = () => {
-    const darkMode = localStorage.getItem("darkMode");
-    if (darkMode === null) {
-        localStorage.setItem("darkMode", "false");
-    }
-    else {
-        if(darkMode==="true") {
-            localStorage.setItem("darkMode", darkMode);
-            mode(darkMode);
-        }
-        else {
-            localStorage.setItem("darkMode", darkMode);
-            mode(darkMode);
-        }
-    }
-}
 
 const Layout = () => {
     const [isDarkMode, setIsDarkMode] = useState("false");
+    const { i18n } = useTranslation("global");
+
     useEffect(() => {
         verifyMode();
-    }, [])
+        verifyLang(i18n);
+        // eslint-disable-next-line
+    }, []);
+
     return (
         <div className="App">
             <BarraNav isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />

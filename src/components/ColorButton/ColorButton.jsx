@@ -1,6 +1,6 @@
 import React from "react";
 import "./ColorButton.scss";
-import mode from "../dark-mode.js";
+import mode from "../functions/dark-mode.js";
 
 
 function ColorButton({ isDarkMode, setIsDarkMode }) {
