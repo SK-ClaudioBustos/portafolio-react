@@ -1,16 +1,14 @@
-import mode from "./dark-mode.js";
+import mode from "./dark-mode";
 
-const verifyMode = () => {
+const verifyMode = (): void => {
     const darkMode = localStorage.getItem("darkMode");
     if (darkMode === null) {
         localStorage.setItem("darkMode", "false");
-    }
-    else {
-        if(darkMode==="true") {
+    } else {
+        if (darkMode === "true") {
             localStorage.setItem("darkMode", darkMode);
             mode(darkMode);
-        }
-        else {
+        } else {
             localStorage.setItem("darkMode", darkMode);
             mode(darkMode);
         }

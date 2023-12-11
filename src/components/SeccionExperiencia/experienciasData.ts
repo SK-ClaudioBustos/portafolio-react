@@ -1,7 +1,14 @@
 import { useTranslation } from "react-i18next";
 
-const useGetData = () => {
-    const {t} = useTranslation("global");
+interface IUseGetData {
+    lugar: string
+    duracion: string
+    puesto: string
+    descripcion: string
+}
+
+const useGetData = (): IUseGetData[] => {
+    const { t } = useTranslation("global");
 
     const data = [
         {
@@ -15,7 +22,7 @@ const useGetData = () => {
             duracion: t("exp.e2.duration"),
             puesto: t("exp.e2.job"),
             descripcion: t("exp.e2.description")
-        },
+        }
     ];
 
     return data;

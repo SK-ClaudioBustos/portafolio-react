@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./Contacto.scss";
 
-function Contacto() {
+function Contacto(): JSX.Element {
   const { t } = useTranslation("global");
   return (
     <section id="section-contacto" className="contacto seccion-oscura">

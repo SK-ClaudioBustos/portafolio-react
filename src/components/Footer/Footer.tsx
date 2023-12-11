@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import braces from "./braces.svg";
 import "./Footer.scss";
 
-function Footer() {
+function Footer(): JSX.Element {
   const { t } = useTranslation("global");
+  const braces = require("./braces.svg") as string;
   return (
     <footer id="final" className="seccion-oscura d-flex flex-column align-items-center justify-content-center">
       <a id="a-logo" href="#inicio">

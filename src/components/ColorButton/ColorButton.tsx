@@ -1,10 +1,15 @@
-import React from "react";
 import "./ColorButton.scss";
-import mode from "../functions/dark-mode.js";
+import mode from "../functions/dark-mode";
+import { Dispatch, SetStateAction } from "react";
 
+interface IColorButtonProps {
+    isDarkMode: string
+    setIsDarkMode: Dispatch<SetStateAction<string>>
+}
 
-function ColorButton({ isDarkMode, setIsDarkMode }) {
-    const handleChange = () => {
+function ColorButton(props: IColorButtonProps): JSX.Element {
+    const { isDarkMode, setIsDarkMode } = props;
+    const handleChange = (): void => {
         const state = isDarkMode === "true" ? "false" : "true";
         setIsDarkMode(state);
         localStorage.setItem("darkMode", state);

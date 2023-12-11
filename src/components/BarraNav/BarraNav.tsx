@@ -1,15 +1,21 @@
-import logo from "./box.svg";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ColorButton from "../ColorButton/ColorButton";
 import LangButton from "../Langbutton/LangButton";
 import { useTranslation } from "react-i18next";
+import { Dispatch, SetStateAction } from "react";
 import "./BarraNav.scss";
 
-function BarraNav({isDarkMode,setIsDarkMode}){
+interface IBarraNavProps {
+  isDarkMode: string
+  setIsDarkMode: Dispatch<SetStateAction<string>>
+}
 
-  const {t} = useTranslation("global");
+function BarraNav(props: IBarraNavProps): JSX.Element {
+  const { isDarkMode, setIsDarkMode } = props;
+  const { t } = useTranslation("global");
+  const logo = require("./box.svg") as string;
     return (
       <Navbar id="inicio" className="navbar" expand="lg">
         <Container>

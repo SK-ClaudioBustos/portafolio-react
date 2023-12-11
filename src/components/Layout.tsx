@@ -12,15 +12,13 @@ import verifyMode from "./functions/verifyMode";
 import verifyLang from "./functions/verifyLang";
 import { useTranslation } from "react-i18next";
 
-
-const Layout = () => {
+const Layout = (): JSX.Element => {
     const [isDarkMode, setIsDarkMode] = useState("false");
     const { i18n } = useTranslation("global");
 
     useEffect(() => {
         verifyMode();
         verifyLang(i18n);
-        // eslint-disable-next-line
     }, []);
 
     return (

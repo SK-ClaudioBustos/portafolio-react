@@ -1,16 +1,15 @@
 import { useTranslation } from "react-i18next";
 
-const LangButton = () => {
+const LangButton = (): JSX.Element => {
     const { i18n } = useTranslation("global");
 
-    const changeLanguage = () => {
+    const changeLanguage = (): void => {
         if (i18n.language === "es") {
             i18n.changeLanguage("en");
-            localStorage.setItem("lang","en");
-        }
-        else {
+            localStorage.setItem("lang", "en");
+        } else {
             i18n.changeLanguage("es");
-            localStorage.setItem("lang","es");
+            localStorage.setItem("lang", "es");
         }
     }
     return (
@@ -19,7 +18,7 @@ const LangButton = () => {
             className="btn btn-outline-primary"
             onClick={changeLanguage}
         >
-            <i class="bi bi-globe"></i>
+            <i className="bi bi-globe"></i>
             {i18n.language === "es" ? " Español" : " English"}
         </button>
     )

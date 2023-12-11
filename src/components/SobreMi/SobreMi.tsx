@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "./SobreMi.scss";
 
-function SobreMi() {
-  const {t} = useTranslation("global");
+function SobreMi(): JSX.Element {
+  const { t } = useTranslation("global");
   return (
     <section id="section-sobre-mi" className="sobre-mi">
       <div className="contenedor text-center">

@@ -1,8 +1,7 @@
 import './App.scss';
 import Layout from './components/Layout';
 
-function App() {
-
+function App (): JSX.Element {
   return (
     <div className="App">
       <Layout/>

@@ -1,5 +1,11 @@
+interface IExperienciaCard {
+    lugar: string
+    puesto: string
+    duracion: string
+    descripcion: string
+}
 
-const ExperienciaCard = (props) => {
+const ExperienciaCard = (props: IExperienciaCard): JSX.Element => {
     const { lugar = "sin lugar", puesto = "sin puesto", duracion = "sin duracion", descripcion = "sin descripcion" } = props;
     return (
         <div className="container experiencia-container">

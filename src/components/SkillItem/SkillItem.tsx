@@ -1,6 +1,14 @@
 import "../Skill/Skill.scss";
 
-const SkillItem = ({ titulo, cuerpo, icono, items = [] }) => {
+interface ISkillItemProps {
+    titulo: string
+    cuerpo: string
+    icono: string
+    items: string[]
+}
+
+const SkillItem = (props: ISkillItemProps): JSX.Element => {
+    const { titulo, cuerpo, icono, items = [] } = props;
     return (
         <div className="columna col-12 col-md-6">
             <i className={`bi bi-${icono}`}></i>
