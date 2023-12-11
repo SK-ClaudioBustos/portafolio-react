@@ -9,6 +9,7 @@
     "@typescript-eslint/parser": "^6.0.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
+    "git-commit-msg-linter": "^5.0.4",
     "i18next": "^23.6.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
@@ -52,6 +53,6 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "sass": "^1.59.3",
-    "typescript": "^5.3.3"
+    "typescript": "^4"
   }
 }
