@@ -11,6 +11,7 @@ footer #a-logo .footer-logo {
   height: 80px;
   width: 80px;
   margin: 10px;
+  color: #000;
 }
 footer .footer-texto {
   font-size: 1.5rem;
@@ -52,7 +53,7 @@ footer .derechos-de-autor {
   color: #fff;
 }
 .foot-dark #a-logo {
-  background-color: #f5f6f7;
+  background-color: #fff;
 }
 .foot-dark .iconos-redes-sociales a {
   border: 2px solid #fff;

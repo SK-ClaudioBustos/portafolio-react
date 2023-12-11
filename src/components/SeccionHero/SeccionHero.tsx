@@ -3,7 +3,7 @@ import "./SeccionHero.scss";
 
 function SeccionHero(): JSX.Element {
     const { t } = useTranslation("global");
-    const profile = require("./profile.svg") as string;
+    const profile = require("./profile.png") as string;
     return (
         <section id="sec-hero" className="hero align-items-stretch">
             <div className="hero-principal d-flex flex-column justify-content-center align-items-center">
