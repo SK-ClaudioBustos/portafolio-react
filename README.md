@@ -13,5 +13,3 @@ git clone https://github.com/SK-ClaudioBustos/portafolio-react.git
 ```bash
 npm start
 ```
-
-[- Linkedin](https://www.linkedin.com/in/claudio-bustos-239a7a216/ "enlace a mi cuenta de linkedin") :smile:
