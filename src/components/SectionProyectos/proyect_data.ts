@@ -18,19 +18,12 @@ const useGetData = (): IDataRecover[] => {
             git: "https://github.com/SK-ClaudioBustos/star-wars-clone-wars-website",
             web: "https://proyect1-beta.vercel.app/"
         },
-        // {
-        //     src: "proyecto_2",
-        //     alt: "imagen de proyecto 2",
-        //     titulo: "Proyecto 2",
-        //     git: "https://github.com/SK-ClaudioBustos/gun-shop",
-        //     web: "https://proyect-2-gun-shop.netlify.app/",
-        // },
         {
-            src: "proximamente",
-            alt: t("proyects.default"),
-            titulo: t("proyects.default-title"),
-            git: "#",
-            web: "#"
+            src: "proyecto_2",
+            alt: "imagen de proyecto 2",
+            titulo: "Proyecto 2",
+            git: "https://github.com/SK-ClaudioBustos/gun-shop",
+            web: "https://proyect-2-gun-shop.netlify.app/"
         },
         {
             src: "proximamente",
