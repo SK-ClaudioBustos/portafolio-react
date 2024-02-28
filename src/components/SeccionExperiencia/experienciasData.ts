@@ -22,6 +22,12 @@ const useGetData = (): IUseGetData[] => {
             duracion: t("exp.e2.duration"),
             puesto: t("exp.e2.job"),
             descripcion: t("exp.e2.description")
+        },
+        {
+            lugar: t("exp.e3.place"),
+            duracion: t("exp.e3.duration"),
+            puesto: t("exp.e3.job"),
+            descripcion: t("exp.e3.description")
         }
     ];
 

@@ -38,6 +38,12 @@
             "duration": "2023 - Present",
             "job": "Freelancer Developer",
             "description": "I am developing a multi-user web system with client/server architecture using the Laravel framework based on PHP."
+        },
+        "e3": {
+            "place": "Kinefitness - General Ramírez",
+            "duration": "2024 - Present",
+            "job": "Freelancer Developer",
+            "description": "One of my last works is based on the development of a website that allows to visualize the works, books of a museum, you can also consult information about the artists and authors, the website will evolve over time."
         }
     },
     "proyects": {

@@ -38,6 +38,12 @@
             "duration": "2023 - Actualidad",
             "job": "Desarrollador Freelancer",
             "description": "Me encuentro realizando el desarrollo de un sistema web multiusuario de arquitectura cliente/servidor utilizando el framework Laravel basado en PHP."
+        },
+        "e3": {
+            "place": "Kinefitness - General Ramírez",
+            "duration": "2024 - Actualidad",
+            "job": "Desarrollador Freelancer",
+            "description": "Uno de mis ultimos trabajos se basa en el desarrollo de una pagina web que permite visualizar las obras, libros de un museo, tambien se puede consultar informacion sobre los artistas y autores, la pagina web ira evolucionando al paso del tiempo."
         }
     },
     "proyects": {
