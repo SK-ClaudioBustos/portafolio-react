@@ -14,6 +14,9 @@ function Footer(): JSX.Element {
       </a>
       <p className="footer-texto text-center">{t("footer.t1")}<br></br>{t("footer.t2")}</p>
       <div className="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://www.linkedin.com/in/claudio-bustos-395a0631a" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-linkedin"></i>
+        </a>
         <a href="https://github.com/SK-ClaudioBustos" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-github"></i>
         </a>
