@@ -13,7 +13,7 @@ function Proyecto(props: IProyectoProps): JSX.Element {
     return (
         <div className="col-12 col-md-6 col-lg-4">
             <div id="proyecto" className="proyecto">
-                <img src={require(`./img/${src}.svg`)} alt={alt}/>
+                <img src={require(`./img/${src}`)} alt={alt}/>
                 <div className="overlay">
                     <p>{titulo}</p>
                     <div className="iconos-contenedor">

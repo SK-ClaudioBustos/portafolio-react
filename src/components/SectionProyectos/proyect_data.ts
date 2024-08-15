@@ -12,21 +12,21 @@ const useGetData = (): IDataRecover[] => {
     const { t } = useTranslation("global");
     const data: IDataRecover[] = [
         {
-            src: "proyecto_1",
+            src: "proyecto_1.svg",
             alt: t("proyects.p1"),
             titulo: "Wiki",
             git: "https://github.com/SK-ClaudioBustos/star-wars-clone-wars-website",
             web: "https://proyect1-beta.vercel.app/"
         },
         {
-            src: "proyecto_2",
+            src: "proyecto_2.svg",
             alt: t("proyects.p2"),
             titulo: "Gun Shop",
             git: "https://github.com/SK-ClaudioBustos/gun-shop",
             web: "https://proyect-2-gun-shop.netlify.app/"
         },
         {
-            src: "proyecto_3",
+            src: "proyecto_3.jpg",
             alt: t("proyects.p3"),
             titulo: "Mu Play",
             git: "https://github.com/SK-ClaudioBustos/mu-play",
