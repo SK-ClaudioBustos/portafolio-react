@@ -33,7 +33,7 @@ const useGetData = (): IDataRecover[] => {
             web: "https://proyect3-lyart.vercel.app"
         },
         {
-            src: "proximamente",
+            src: "proximamente.svg",
             alt: t("proyects.default"),
             titulo: t("proyects.default-title"),
             git: "#",
