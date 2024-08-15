@@ -50,6 +50,8 @@
         "title": "Mis proyectos recientes",
         "description": "Estos son mis proyectos",
         "p1": "imagen de proyecto 1",
+        "p2": "imagen de proyecto 2",
+        "p3": "imagen de proyecto 3",
         "default": "imagen de proximamente otro proyecto",
         "default-title": "Proximamente"
     },

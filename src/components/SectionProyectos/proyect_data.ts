@@ -14,16 +14,23 @@ const useGetData = (): IDataRecover[] => {
         {
             src: "proyecto_1",
             alt: t("proyects.p1"),
-            titulo: "Wiki Proyect",
+            titulo: "Wiki",
             git: "https://github.com/SK-ClaudioBustos/star-wars-clone-wars-website",
             web: "https://proyect1-beta.vercel.app/"
         },
         {
             src: "proyecto_2",
-            alt: "imagen de proyecto 2",
-            titulo: "Proyecto 2",
+            alt: t("proyects.p2"),
+            titulo: "Gun Shop",
             git: "https://github.com/SK-ClaudioBustos/gun-shop",
             web: "https://proyect-2-gun-shop.netlify.app/"
+        },
+        {
+            src: "proyecto_3",
+            alt: t("proyects.p3"),
+            titulo: "Mu Play",
+            git: "https://github.com/SK-ClaudioBustos/mu-play",
+            web: "https://proyect3-lyart.vercel.app"
         },
         {
             src: "proximamente",
