@@ -29,21 +29,21 @@
         "title": "Experiencies",
         "e1": {
             "place": "Public Prosecutor's Office - Paraná",
-            "duration": "2023 - Present",
+            "duration": "2023 - 2024",
             "job": "Intern",
-            "description": "I am in charge of developing functional generic components and creating functions that are then incorporated into the main system, I do this using Next js, in addition to other technologies such as JsonForms and MUI Component Library, I also create microservices to maintain a Graphql API that uses MongoDb."
+            "description": "In this internship I was in charge of developing new functionalities, defining interfaces and generic functional components, with Mui Component Library + JsonForms + React js, which were then incorporated into the main system which communicates with different microservices, mainly using Graphql with a Nest Js server in which we additionally configured a login service with Keycloak and a service to store files with MinioJS. I also helped to develop an application that will serve to streamline the taking of reports of each person who comes to each police station in Entre Rios."
         },
         "e2": {
             "place": "Kinefitness - General Ramírez",
             "duration": "2023 - Present",
             "job": "Freelancer Developer",
-            "description": "I am developing a multi-user web system with client/server architecture using the Laravel framework based on PHP."
+            "description": "I am developing a multi-user web system with client/server architecture using Laravel, this is the final project that I have to present in order to graduate from my career."
         },
         "e3": {
             "place": "Kinefitness - General Ramírez",
             "duration": "2024 - Present",
             "job": "Freelancer Developer",
-            "description": "One of my last works is based on the development of a website that allows to visualize the works, books of a museum, you can also consult information about the artists and authors, the website will evolve over time."
+            "description": "One of my last works is based on the development of a website that allows to visualize the works and books of a museum, you can also consult information about the artists and authors, the website will evolve over time."
         }
     },
     "proyects": {
