@@ -1,4 +1,4 @@
-import "./Proyecto.scss";
+import "./Proyecto.css";
 
 interface IProyectoProps {
     src: string

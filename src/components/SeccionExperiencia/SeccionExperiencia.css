@@ -1,10 +1,24 @@
-/* Fuentes */
+@font-face {
+  font-family: "Rubik Dirt";
+  src: url(/src/fonts/rubik-dirt.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/src/fonts/quicksand.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .section-exp .experiencia-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Rubik Dirt", system-ui, Arial, Helvetica, sans-serif;
   color: #000;
 }
+
 .section-exp .experiencia-div .experiencia-container {
   margin-top: 50px;
   border: 1px #584e4e solid;
@@ -14,11 +28,13 @@
   transition: all 0.2s ease-in;
   border-radius: 5px;
 }
+
 @media (max-width: 768px) {
   .section-exp .experiencia-div .experiencia-container {
     height: 320px;
   }
 }
+
 @media (max-width: 576px) {
   .section-exp .experiencia-div .experiencia-container {
     padding: 0;
@@ -27,13 +43,16 @@
     margin-bottom: 40px;
   }
 }
+
 .section-exp .experiencia-div .experiencia-container:hover {
   color: #0d6efd;
   border-bottom: 5px #0d6efd solid;
 }
+
 .section-exp .experiencia-div .experiencia-container .experiencia-row {
   font-family: "Quicksand", sans-serif;
 }
+
 @media (max-width: 768px) {
   .section-exp .experiencia-div .experiencia-container .experiencia-row {
     padding: 0px;
@@ -41,38 +60,47 @@
     text-align: center;
   }
 }
+
 @media (max-width: 576px) {
   .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .ms-4 {
     margin: 10px 0 0 0 !important;
   }
 }
+
 .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-lugar {
   color: #141313;
 }
+
 @media (max-width: 576px) {
   .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-lugar {
     font-size: 20px;
   }
 }
+
 .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-puesto {
   color: #615151;
 }
+
 @media (max-width: 576px) {
   .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-puesto {
     font-size: 15px;
   }
 }
+
 .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-duracion {
   color: #584e4e;
 }
+
 @media (max-width: 576px) {
   .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-duracion {
     font-size: 15px;
   }
 }
+
 .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-descripcion {
   font-size: 1rem;
 }
+
 @media (max-width: 576px) {
   .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-descripcion {
     font-size: 13px;
@@ -82,30 +110,38 @@
 .exp-dark {
   background-color: #0a0a23;
 }
+
 .exp-dark .experiencia-titulo {
   color: #fff;
 }
+
 .exp-dark .experiencia-div .experiencia-container {
   border-color: #d7d7d7;
   background-color: #000;
   transition: all 0.2s ease-in;
 }
+
 .exp-dark .experiencia-div .experiencia-container:hover {
   color: #f8f9fa;
   border-bottom: 5px #fff solid;
 }
+
 .exp-dark .experiencia-div .experiencia-container:hover .experiencia-row .experiencia-col .experiencia-descripcion {
   color: #f8f9fa;
 }
+
 .exp-dark .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-lugar {
   color: #f8f9fa;
 }
+
 .exp-dark .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-puesto {
   color: #f5f6f7;
 }
+
 .exp-dark .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-duracion {
   color: #aeaeae;
 }
+
 .exp-dark .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-descripcion {
   color: #615151;
-}/*# sourceMappingURL=SeccionExperiencia.css.map */
+}

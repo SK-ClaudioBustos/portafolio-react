@@ -1,12 +1,11 @@
-import React from "react";
-import "./UpButton.scss";
+import "./UpButton.css";
 
 function UpButton(): JSX.Element {
-    window.onscroll = function() {
+    window.onscroll = function () {
         const alturaPagina = window.scrollY;
         const upDiv = document.getElementById("up-div");
-        if (alturaPagina >= 200){
-            if (upDiv){
+        if (alturaPagina >= 200) {
+            if (upDiv) {
                 upDiv.style.display = 'flex';
                 upDiv.style.alignItems = "center";
                 upDiv.style.justifyContent = "center";

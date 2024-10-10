@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("/src/fonts/quicksand.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 footer {
   min-height: 400px;
   background-color: #1b1b32;
@@ -70,4 +77,4 @@ footer .derechos-de-autor {
 }
 .foot-dark .derechos-de-autor {
   color: #aeaeae;
-}/*# sourceMappingURL=Footer.css.map */
+}

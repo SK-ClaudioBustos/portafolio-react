@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./SobreMi.scss";
+import "./SobreMi.css";
 
 function SobreMi(): JSX.Element {
   const { t } = useTranslation("global");

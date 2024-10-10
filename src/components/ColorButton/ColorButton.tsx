@@ -1,4 +1,4 @@
-import "./ColorButton.scss";
+import "./ColorButton.css";
 import mode from "../functions/dark-mode";
 import { Dispatch, SetStateAction } from "react";
 

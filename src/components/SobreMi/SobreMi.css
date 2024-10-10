@@ -10,7 +10,7 @@
 .sobre-mi .contenedor .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: "Rubik Dirt", cursive;
+  font-family: Rubik Dirt, system-ui, Arial, Helvetica, sans-serif;
 }
 .sobre-mi .contenedor .seccion-texto {
   font-size: 1.2rem;
@@ -18,4 +18,4 @@
 
 .mi-dark {
   background-color: #000;
-}/*# sourceMappingURL=SobreMi.css.map */
+}

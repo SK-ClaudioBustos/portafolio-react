@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Rubik Dirt";
+  src: url(/src/fonts/rubik-dirt.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .proyectos-recientes {
   padding: 40px;
   background-color: #fff;
@@ -6,7 +13,7 @@
 .proyectos-recientes .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Rubik Dirt", system-ui, Arial, Helvetica, sans-serif;
   color: #000;
 }
 .proyectos-recientes .seccion-descripcion {
@@ -27,4 +34,4 @@
 }
 .sec-proy-dark .seccion-descripcion {
   color: #aeaeae;
-}/*# sourceMappingURL=SectionProyectos.css.map */
+}

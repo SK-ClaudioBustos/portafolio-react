@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Rubik Dirt";
+  src: url(/src/fonts/rubik-dirt.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Fuentes */
 .contacto {
   color: #fff;
@@ -22,7 +29,7 @@
 .contacto .container .contacto-div .row .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Rubik Dirt", system-ui, Arial, Helvetica, sans-serif;
 }
 @media (max-width: 472px) {
   .contacto .container .contacto-div .row .seccion-titulo {
@@ -83,4 +90,4 @@
 }
 .cont-dark .container .contacto-div .row div button i {
   color: #f5f6f7;
-}/*# sourceMappingURL=Contacto.css.map */
+}

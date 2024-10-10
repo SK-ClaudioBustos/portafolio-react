@@ -1,6 +1,6 @@
 import SkillItem from "../SkillItem/SkillItem";
 import useGetData from "./itemsData";
-import "./Skill.scss";
+import "./Skill.css";
 
 function Skill(): JSX.Element {
   const itemsData = useGetData();

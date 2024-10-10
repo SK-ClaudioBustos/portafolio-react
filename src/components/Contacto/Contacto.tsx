@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./Contacto.scss";
+import "./Contacto.css";
 
 function Contacto(): JSX.Element {
   const { t } = useTranslation("global");

@@ -1,4 +1,4 @@
-import "../Skill/Skill.scss";
+import "../Skill/Skill.css";
 
 interface ISkillItemProps {
     titulo: string

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./SeccionHero.scss";
+import "./SeccionHero.css";
 
 function SeccionHero(): JSX.Element {
     const { t } = useTranslation("global");

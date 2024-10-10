@@ -1,7 +1,7 @@
 import Proyecto from "./proyectos/Proyecto";
 import useGetData from "./proyect_data";
 import { useTranslation } from "react-i18next";
-import "./SectionProyectos.scss";
+import "./SectionProyectos.css";
 
 function SectionProyectos(): JSX.Element {
     const data = useGetData();

@@ -1,11 +1,20 @@
+@font-face {
+  font-family: "Rubik Dirt";
+  src: url(/src/fonts/rubik-dirt.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .hero {
   background-color: #f5f6f7;
   min-height: 450px;
   text-align: center;
 }
+
 .hero .hero-principal {
   padding: 3rem;
 }
+
 .hero .hero-principal .hero-imagen {
   width: 200px;
   height: 200px;
@@ -14,10 +23,12 @@
   background-color: #000;
   color: #fff;
 }
+
 .hero .hero-principal h1 {
   font-size: 2.5rem;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Rubik Dirt", system-ui, Arial, Helvetica, sans-serif;
 }
+
 .hero .hero-principal h2 {
   font-size: 1.5rem;
   color: #615151;
@@ -26,12 +37,15 @@
 .hero-dark {
   background-color: #0a0a23;
 }
+
 .hero-dark .hero-principal .hero-imagen {
   background-color: #1b1b32;
 }
+
 .hero-dark .hero-principal h1 {
   color: #f8f9fa;
 }
+
 .hero-dark .hero-principal h2 {
   color: #f5f6f7;
-}/*# sourceMappingURL=SeccionHero.css.map */
+}

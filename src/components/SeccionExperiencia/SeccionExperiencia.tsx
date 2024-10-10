@@ -1,7 +1,7 @@
 import ExperienciaCard from "./ExperienciaCard/ExperienciaCard";
 import useGetData from "./experienciasData";
 import { useTranslation } from "react-i18next";
-import "./SeccionExperiencia.scss";
+import "./SeccionExperiencia.css";
 
 const SeccionExperiencia = (): JSX.Element => {
     const { t } = useTranslation("global");

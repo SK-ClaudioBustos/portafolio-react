@@ -5,7 +5,7 @@ import ColorButton from "../ColorButton/ColorButton";
 import LangButton from "../Langbutton/LangButton";
 import { useTranslation } from "react-i18next";
 import { Dispatch, SetStateAction } from "react";
-import "./BarraNav.scss";
+import "./BarraNav.css";
 interface IBarraNavProps {
   isDarkMode: string
   setIsDarkMode: Dispatch<SetStateAction<string>>

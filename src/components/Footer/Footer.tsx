@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "./Footer.scss";
+import "./Footer.css";
 
 function Footer(): JSX.Element {
   const { t } = useTranslation("global");
