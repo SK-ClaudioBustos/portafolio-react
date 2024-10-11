@@ -10,7 +10,8 @@
 .sobre-mi .contenedor .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: Rubik Dirt, system-ui, Arial, Helvetica, sans-serif;
+  font-family: system-ui, Arial;
+  font-weight: 900;
 }
 .sobre-mi .contenedor .seccion-texto {
   font-size: 1.2rem;

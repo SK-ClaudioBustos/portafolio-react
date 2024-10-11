@@ -18,7 +18,7 @@ function ColorButton(props: IColorButtonProps): JSX.Element {
 
     return (
         <div className="d-flex justify-content-center">
-            <button onClick={handleChange} id="switch" className="switch">
+            <button onClick={handleChange} aria-label="Modo Oscuro - Dark Mode" id="switch" className="switch">
                 <span><i className="bi bi-sun"></i></span>
                 <span><i className="bi bi-moon"></i></span>
             </button>

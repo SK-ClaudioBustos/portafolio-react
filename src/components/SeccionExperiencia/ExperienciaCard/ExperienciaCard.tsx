@@ -13,8 +13,8 @@ const ExperienciaCard = (props: IExperienciaCard): JSX.Element => {
                 <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 experiencia-col">
                     <div className="ms-4">
                         <h3 className="experiencia-lugar">{lugar}</h3>
-                        <h5 className="experiencia-puesto">{puesto}</h5>
-                        <p className="experiencia-duracion">{duracion}</p>
+                        <h4 className="experiencia-puesto">{puesto}</h4>
+                        <span className="experiencia-duracion">{duracion}</span>
                     </div>
                 </div>
                 <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 experiencia-col">

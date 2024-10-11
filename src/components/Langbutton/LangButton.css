@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+}
+
+#button-lang {
+    border-radius: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+#button-lang:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}

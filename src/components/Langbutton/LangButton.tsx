@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-
+import "./LangButton.css";
 const LangButton = (): JSX.Element => {
     const { i18n } = useTranslation("global");
 
@@ -15,7 +15,7 @@ const LangButton = (): JSX.Element => {
     return (
         <button
             type="button"
-            className="btn btn-outline-primary"
+            id="button-lang"
             onClick={changeLanguage}
         >
             <i className="bi bi-globe"></i>

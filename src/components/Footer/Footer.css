@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "Quicksand";
-  src: url("/src/fonts/quicksand.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 footer {
   min-height: 400px;
   background-color: #1b1b32;
@@ -13,6 +6,7 @@ footer {
 footer #a-logo {
   background-color: #1b1b32;
   border-radius: 50%;
+  cursor: unset;
 }
 footer #a-logo .footer-logo {
   height: 80px;
@@ -23,7 +17,7 @@ footer #a-logo .footer-logo {
 footer .footer-texto {
   font-size: 1.5rem;
   padding: 20px;
-  font-family: "Quicksand", sans-serif;
+  font-family: system-ui, sans-serif;
 }
 footer .iconos-redes-sociales a {
   width: 50px;

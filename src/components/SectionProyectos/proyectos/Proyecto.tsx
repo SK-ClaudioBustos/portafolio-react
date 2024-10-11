@@ -13,16 +13,16 @@ function Proyecto(props: IProyectoProps): JSX.Element {
     return (
         <div className="col-12 col-md-6 col-lg-4">
             <div id="proyecto" className="proyecto">
-                <img src={require(`./img/${src}`)} alt={alt}/>
+                <img src={require(`./img/${src}`)} alt={alt} />
                 <div className="overlay">
                     <p>{titulo}</p>
                     <div className="iconos-contenedor">
-                    <a href={git} target={ web === "#" ? "_self" : "_blank"} rel="noopener noreferrer">
-                        <i className="bi bi-github"></i>
-                    </a>
-                    <a href={web} target= {web === "#" ? "_self" : "_blank"} rel="noopener noreferrer">
-                        <i className="bi bi-laptop"></i>
-                    </a>
+                        <a href={git} aria-label={`Ir al repositorio del proyecto en ${git}`} target={git === "#" ? "_self" : "_blank"} rel="noopener noreferrer">
+                            <i className="bi bi-github"></i>
+                        </a>
+                        <a href={web} aria-label={`Ir a la web del proyecto en ${web}`} target={web === "#" ? "_self" : "_blank"} rel="noopener noreferrer">
+                            <i className="bi bi-laptop"></i>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,21 +1,8 @@
-@font-face {
-  font-family: "Rubik Dirt";
-  src: url(/src/fonts/rubik-dirt.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Quicksand";
-  src: url("/src/fonts/quicksand.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .section-exp .experiencia-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: "Rubik Dirt", system-ui, Arial, Helvetica, sans-serif;
+  font-family: system-ui, Arial;
+  font-weight: 900;
   color: #000;
 }
 
@@ -50,7 +37,7 @@
 }
 
 .section-exp .experiencia-div .experiencia-container .experiencia-row {
-  font-family: "Quicksand", sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 @media (max-width: 768px) {
