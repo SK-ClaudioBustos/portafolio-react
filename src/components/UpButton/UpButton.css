@@ -1,3 +1,7 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
 .up-div {
   display: none;
   bottom: 40px;
