@@ -1,6 +1,5 @@
 {
     "navbar": {
-        "about-me": "About me",
         "skills": "Skills",
         "experiencies": "Experiences",
         "projects": "Proyects",
@@ -51,7 +50,6 @@
         "description": "These are my projects",
         "p1": "image project 1",
         "p2": "image project 2",
-        "p3": "image project 3",
         "default": "image of another project coming soon",
         "default-title": "Coming soon"
     },

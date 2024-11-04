@@ -13,7 +13,7 @@ const useGetData = (): IUseGetData[] => {
             titulo: t("skills.s1.title"),
             cuerpo: t("skills.s1.body"),
             icono: "laptop",
-            items: ["CSS", "Javascript", "Typescript", "React", "Next js"]
+            items: ["CSS", "Javascript", "Typescript", "React", "Next js", "PHP"]
         },
         {
             titulo: t("skills.s2.title"),

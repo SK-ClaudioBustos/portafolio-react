@@ -3,13 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useTranslation } from "react-i18next";
-import ColorButton from "../ColorButton/ColorButton";
+import DarkModeButton from "../DarkModeButton/DarkModeButton";
 import LangButton from "../Langbutton/LangButton";
 import "./BarraNav.css";
 
 interface IBarraNavProps {
-  isDarkMode: string
-  setIsDarkMode: Dispatch<SetStateAction<string>>
+  isDarkMode: boolean
+  setIsDarkMode: Dispatch<SetStateAction<boolean>>
 }
 
 function BarraNav(props: IBarraNavProps): JSX.Element {
@@ -28,12 +28,11 @@ function BarraNav(props: IBarraNavProps): JSX.Element {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link aria-label="Ir a seccion sobre mí" className="nav-link text-center" href="#section-sobre-mi">{t("navbar.about-me")}</Nav.Link>
             <Nav.Link aria-label="Ir a seccion habilidades" className="nav-link text-center" href="#section-skill">{t("navbar.skills")}</Nav.Link>
             <Nav.Link aria-label="Ir a seccion experiencias" className="nav-link text-center" href="#section-exp">{t("navbar.experiencies")}</Nav.Link>
             <Nav.Link aria-label="Ir a seccion proyectos" className="nav-link text-center" href="#section-proyectos">{t("navbar.projects")}</Nav.Link>
             <Nav.Link aria-label="Ir a seccion contacto" className="nav-link text-center" href="#section-contacto">{t("navbar.contact")}</Nav.Link>
-            <a role="button" className="nav-link"><ColorButton isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} /></a>
+            <DarkModeButton isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
             <LangButton />
           </Nav>
         </Navbar.Collapse>

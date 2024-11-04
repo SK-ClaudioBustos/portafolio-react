@@ -13,14 +13,18 @@ const LangButton = (): JSX.Element => {
         }
     }
     return (
-        <button
-            type="button"
-            id="button-lang"
-            onClick={changeLanguage}
-        >
-            <i className="bi bi-globe"></i>
-            {i18n.language === "es" ? " Español" : " English"}
-        </button>
+        <a role="button" className="nav-link">
+            <div className="d-flex justify-content-center">
+                <button
+                    className={i18n.language === "es" ? "switch-lang active" : "switch-lang"}
+                    aria-label="Cambiar idioma"
+                    onClick={changeLanguage}
+                >
+                    <span>ES</span>
+                    <span>EN</span>
+                </button>
+            </div>
+        </a>
     )
 }
 

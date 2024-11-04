@@ -1,6 +1,5 @@
 import BarraNav from './BarraNav/BarraNav';
 import SeccionHero from "./SeccionHero/SeccionHero";
-// import SobreMi from "./SobreMi/SobreMi";
 import Skill from "./Skill/Skill";
 import SeccionProyectos from "./SectionProyectos/SectionProyectos";
 import Contacto from "./Contacto/Contacto";
@@ -13,7 +12,7 @@ import verifyLang from "./functions/verifyLang";
 import { useTranslation } from "react-i18next";
 
 const Layout = (): JSX.Element => {
-    const [isDarkMode, setIsDarkMode] = useState("false");
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
     const { i18n } = useTranslation("global");
 
     useEffect(() => {
@@ -25,7 +24,6 @@ const Layout = (): JSX.Element => {
         <div className="App">
             <BarraNav isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
             <SeccionHero />
-            {/* <SobreMi /> */}
             <Skill />
             <SeccionExperiencia/>
             <SeccionProyectos />
