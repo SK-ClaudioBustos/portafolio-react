@@ -10,7 +10,7 @@
   margin-top: 50px;
   border: 1px #584e4e solid;
   background-color: #f5f6f7;
-  padding: 25px 10px;
+  padding: 25px 20px;
   height: 290px;
   transition: all 0.2s ease-in;
   border-radius: 5px;
@@ -18,7 +18,7 @@
 
 @media (max-width: 768px) {
   .section-exp .experiencia-div .experiencia-container {
-    height: 320px;
+    height: fit-content;
   }
 }
 
@@ -86,6 +86,7 @@
 
 .section-exp .experiencia-div .experiencia-container .experiencia-row .experiencia-col .experiencia-descripcion {
   font-size: 1rem;
+  text-align: justify;
 }
 
 @media (max-width: 576px) {
