@@ -1,6 +1,6 @@
 import BarraNav from './BarraNav/BarraNav';
 import SeccionHero from "./SeccionHero/SeccionHero";
-import SobreMi from "./SobreMi/SobreMi";
+// import SobreMi from "./SobreMi/SobreMi";
 import Skill from "./Skill/Skill";
 import SeccionProyectos from "./SectionProyectos/SectionProyectos";
 import Contacto from "./Contacto/Contacto";
@@ -25,7 +25,7 @@ const Layout = (): JSX.Element => {
         <div className="App">
             <BarraNav isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
             <SeccionHero />
-            <SobreMi />
+            {/* <SobreMi /> */}
             <Skill />
             <SeccionExperiencia/>
             <SeccionProyectos />
