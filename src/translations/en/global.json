@@ -48,8 +48,6 @@
     "proyects": {
         "title": "My recent projects",
         "description": "These are my projects",
-        "p1": "image project 1",
-        "p2": "image project 2",
         "default": "image of another project coming soon",
         "default-title": "Coming soon"
     },

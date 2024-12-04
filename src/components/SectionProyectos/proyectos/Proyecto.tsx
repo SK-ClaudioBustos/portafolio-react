@@ -12,7 +12,7 @@ function Proyecto(props: IProyectoProps): JSX.Element {
     const { src, alt, titulo, git, web } = props;
     return (
         <div className="col-12 col-md-6 col-lg-4">
-            <div id="proyecto" className="proyecto">
+            <div className="proyecto">
                 <img src={require(`./img/${src}`)} alt={alt} />
                 <div className="overlay">
                     <p>{titulo}</p>

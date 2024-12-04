@@ -12,11 +12,11 @@ const useGetData = (): IDataRecover[] => {
     const { t } = useTranslation("global");
     const data: IDataRecover[] = [
         {
-            src: "proyecto_3.webp",
-            alt: t("proyects.p3"),
+            src: "mu_play.webp",
+            alt: "image project mu play",
             titulo: "Mu Play",
             git: "https://github.com/SK-ClaudioBustos/mu-play",
-            web: "https://proyect3-lyart.vercel.app"
+            web: "https://mu-play.vercel.app"
         },
         {
             src: "proximamente.svg",
