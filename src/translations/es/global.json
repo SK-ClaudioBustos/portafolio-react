@@ -15,6 +15,7 @@
 		"introduction": "Soy estudiante de la carrera analista de sistemas, me dedico al desarrollo de software, en este momento me encuentro cursando la carrera Analista de Sistemas y realizando una pasantía, dentro de mis hobbies me gusta dibujar, realizar calistenia y distraerme con videojuegos"
 	},
 	"skills": {
+		"title": "Conocimientos",
 		"s1": {
 			"title": "Desarrollo Web",
 			"body": "Estos son mis conocimientos tecnológicos de Frontend."

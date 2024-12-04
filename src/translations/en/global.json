@@ -15,6 +15,7 @@
         "introduction": "I am a Systems Analyst student, I am dedicated to software development, at the moment I am studying a Systems Analyst career and doing an internship, among my hobbies I like to draw, do calisthenics and distract myself with video games"
     },
     "skills": {
+        "title": "Skills",
         "s1": {
             "title": "Web Development",
             "body": "These are my Frontend technology skills."

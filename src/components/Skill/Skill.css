@@ -1,8 +1,19 @@
 .skill {
-  padding: 40px 40px 60px 60px;
+  padding: 40px 60px;
   background-color: #fff;
   color: #000;
+  margin-bottom: 40px;
 }
+
+.skill-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: system-ui, Arial;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 42px;
+}
+
 .skill .columna {
   padding: 20px;
   border: 2px solid rgba(128, 128, 128, 0.3019607843);
