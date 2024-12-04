@@ -12,7 +12,7 @@ const SkillItem = (props: ISkillItemProps): JSX.Element => {
     return (
         <div className="columna col-12 col-md-6">
             <i className={`bi bi-${icono}`}></i>
-            <p className="skill-titulo">{titulo}</p>
+            <p className="skill-item-titulo">{titulo}</p>
             <p>
                 {cuerpo}
             </p>

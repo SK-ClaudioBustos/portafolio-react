@@ -39,6 +39,7 @@ module.exports = {
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-trailing-spaces": "off",
         "eol-last": 0,
     }
 }

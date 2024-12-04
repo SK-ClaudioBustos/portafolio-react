@@ -14,7 +14,7 @@
   margin-bottom: 42px;
 }
 
-.skill .columna {
+.columna {
   padding: 20px;
   border: 2px solid rgba(128, 128, 128, 0.3019607843);
   display: flex;
@@ -23,25 +23,30 @@
   justify-content: space-evenly;
   transition: all 0.2s ease-in;
 }
-.skill .columna:hover {
+
+.columna:hover {
   color: #fff;
   background-color: #1b1b32;
 }
-.skill .columna .skill-titulo {
+
+.skill-item-titulo {
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
 }
-.skill .columna .badges-contenedor {
+
+.badges-contenedor {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
 }
-.skill .columna .badges-contenedor .badge {
+
+.badge {
   background-color: #0d6efd;
   margin: 5px;
 }
-.skill .columna i {
+
+.columna i {
   font-size: 2.5rem;
   color: #7ade30;
   background-color: #0a0a23;
@@ -49,22 +54,40 @@
   border-radius: 50%;
 }
 
-.skill-dark {
-  background-color: #0a0a23;
-  color: #fff;
-}
-.skill-dark .columna {
-  border-color: #fff;
-}
-.skill-dark .columna:hover {
-  color: #000;
-  background-color: #fff;
-}
-.skill-dark .columna i {
-  color: #fff;
-  background-color: rgba(128, 128, 128, 0.3019607843);
-}
-.skill-dark .columna .badges-contenedor .badge {
-  color: #141313;
-  background-color: #aeaeae;
+body.dark {
+  .skill {
+    background-color: #0a0a23;
+    color: #fff;
+  }
+  
+  .skill-titulo {
+    color: #fff;
+  }
+  
+  .columna {
+    border-color: #fff;
+  }
+  
+  .columna:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  
+  .columna i {
+    color: #fff;
+    background-color: rgba(128, 128, 128, 0.3019607843);
+  }
+  
+  .badge {
+    color: #141313;
+    background-color: #aeaeae;
+  }
+  
+  .skill-item-titulo {
+    color: #fff;
+  }
+  
+  .columna:hover .skill-item-titulo {
+    color: #000;
+  }
 }

@@ -3,7 +3,8 @@
         "skills": "Skills",
         "experiencies": "Experiences",
         "projects": "Proyects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "about": "About Me"
     },
     "hero": {
         "h1": "Hi there, i am Claudio Bustos",
@@ -11,8 +12,8 @@
         "photo": "claudio bustos photo"
     },
     "about-me": {
-        "title": "Meet Claudio Bustos",
-        "introduction": "I am a Systems Analyst student, I am dedicated to software development, at the moment I am studying a Systems Analyst career and doing an internship, among my hobbies I like to draw, do calisthenics and distract myself with video games"
+        "title": "About me",
+        "introduction": "I am a student in the Systems Analyst program and I am dedicated to software development. Currently, I am pursuing my studies in Systems Analysis and looking for my first job in the IT field. I am constantly improving my skills and learning new ones. Some of my hobbies include practicing calisthenics and playing video games."
     },
     "skills": {
         "title": "Skills",

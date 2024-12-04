@@ -1,35 +1,28 @@
-import { Dispatch, SetStateAction } from "react";
+import { useState } from "react";
 import mode from "../functions/dark-mode";
 import "./DarkModeButton.css";
 
-interface IColorButtonProps {
-    isDarkMode: boolean
-    setIsDarkMode: Dispatch<SetStateAction<boolean>>
-}
-
-function DarkModeButton(props: IColorButtonProps): JSX.Element {
-    const { isDarkMode, setIsDarkMode } = props;
+function DarkModeButton(): JSX.Element {
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
     const handleChange = (): void => {
         const state = isDarkMode ? "true" : "false";
         setIsDarkMode(!isDarkMode);
         localStorage.setItem("darkMode", state);
-        mode(state);
+        mode(isDarkMode);
     }
 
     return (
-        <a role="button" className="nav-link">
-            <div className="d-flex justify-content-center">
-                <button
-                    className="switch"
-                    aria-label="Modo Oscuro - Dark Mode"
-                    id="switch"
-                    onClick={handleChange}
-                >
-                    <span><i className="bi bi-sun"></i></span>
-                    <span><i className="bi bi-moon"></i></span>
-                </button>
-            </div>
-        </a>
+        <div className="nav-link d-flex justify-content-center">
+            <button
+                id="dark-mode-button"
+                className="dark-mode-button"
+                aria-label="Modo Oscuro - Dark Mode"
+                onClick={handleChange}
+            >
+                <span><i className="bi bi-sun"></i></span>
+                <span><i className="bi bi-moon"></i></span>
+            </button>
+        </div>
     );
 }
 

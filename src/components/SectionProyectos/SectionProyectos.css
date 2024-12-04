@@ -3,29 +3,31 @@
   background-color: #fff;
   color: #000;
 }
-.proyectos-recientes .seccion-titulo {
+.seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
   font-family: system-ui, Arial;
   font-weight: 900;
   color: #000;
 }
-.proyectos-recientes .seccion-descripcion {
+.seccion-descripcion {
   font-size: 1.2rem;
   color: #584e4e;
 }
-.proyectos-recientes .proyectos-contenedor {
+.proyectos-contenedor {
   padding-top: 60px;
   margin-bottom: 40px;
 }
 
-.sec-proy-dark {
-  background-color: #0a0a23;
-  color: #fff;
-}
-.sec-proy-dark .seccion-titulo {
-  color: #fff;
-}
-.sec-proy-dark .seccion-descripcion {
-  color: #aeaeae;
+body.dark {
+  .proyectos-recientes {
+    background-color: #0a0a23;
+    color: #fff;
+  }
+  .seccion-titulo {
+    color: #fff;
+  }
+  .seccion-descripcion {
+    color: #aeaeae;
+  }
 }

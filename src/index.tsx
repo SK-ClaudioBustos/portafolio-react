@@ -5,6 +5,7 @@ import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import global_es from "./translations/es/global.json";
 import global_en from "./translations/en/global.json";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root') as Element);
 if (!root) throw new Error('Error al tratar de encontrar el elemento');

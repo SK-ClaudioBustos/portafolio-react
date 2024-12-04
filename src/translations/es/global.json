@@ -3,7 +3,8 @@
 		"skills": "Habilidades",
 		"experiencies": "Experiencias",
 		"projects": "Proyectos",
-		"contact": "Contacto"
+		"contact": "Contacto",
+        "about": "Sobre mí"
 	},
 	"hero": {
 		"h1": "Hola, soy Claudio Bustos",
@@ -11,8 +12,8 @@
 		"photo": "foto de claudio bustos"
 	},
 	"about-me": {
-		"title": "Conoce a Claudio Bustos",
-		"introduction": "Soy estudiante de la carrera analista de sistemas, me dedico al desarrollo de software, en este momento me encuentro cursando la carrera Analista de Sistemas y realizando una pasantía, dentro de mis hobbies me gusta dibujar, realizar calistenia y distraerme con videojuegos"
+		"title": "Quien soy?",
+		"introduction": "Soy estudiante de la carrera analista de sistemas, me dedico al desarrollo de software, en este momento me encuentro cursando la carrera Analista de Sistemas y estoy buscando mi primer empleo dentro del mundo de IT, siempre estoy mejorando mis capacidades y aprendiendo nuevas habilidades, algunos mis hobbies son realizar calistenia y jugar con videojuegos."
 	},
 	"skills": {
 		"title": "Conocimientos",

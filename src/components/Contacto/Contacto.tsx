@@ -4,11 +4,11 @@ import "./Contacto.css";
 function Contacto(): JSX.Element {
   const { t } = useTranslation("global");
   return (
-    <section id="section-contacto" className="contacto seccion-oscura">
+    <section id="section-contacto" className="contacto">
       <div className="container">
         <div className="contacto-div text-center d-flex rectangulo justify-content-evenly">
           <div className="row">
-            <div className="col-12 col-md-4 seccion-titulo">
+            <div className="col-12 col-md-4 seccion-titulo-contacto">
               {t("contact.t1")}
             </div>
             <div className="col-12 col-md-4 descripcion">

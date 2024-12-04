@@ -6,11 +6,9 @@ const verifyMode = (): void => {
         localStorage.setItem("darkMode", "false");
     } else {
         if (darkMode === "true") {
-            localStorage.setItem("darkMode", darkMode);
-            mode(darkMode);
+            mode(true);
         } else {
-            localStorage.setItem("darkMode", darkMode);
-            mode(darkMode);
+            mode(false);
         }
     }
 }

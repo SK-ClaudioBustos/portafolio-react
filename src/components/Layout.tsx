@@ -1,18 +1,18 @@
+import { useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 import BarraNav from './BarraNav/BarraNav';
-import SeccionHero from "./SeccionHero/SeccionHero";
-import Skill from "./Skill/Skill";
-import SeccionProyectos from "./SectionProyectos/SectionProyectos";
 import Contacto from "./Contacto/Contacto";
 import Footer from "./Footer/Footer";
-import UpButton from "./UpButton/UpButton";
-import SeccionExperiencia from "./SeccionExperiencia/SeccionExperiencia";
-import { useState, useEffect } from 'react';
-import verifyMode from "./functions/verifyMode";
 import verifyLang from "./functions/verifyLang";
-import { useTranslation } from "react-i18next";
+import verifyMode from "./functions/verifyMode";
+import SeccionExperiencia from "./SeccionExperiencia/SeccionExperiencia";
+import SeccionHero from "./SeccionHero/SeccionHero";
+import SeccionProyectos from "./SectionProyectos/SectionProyectos";
+import Skill from "./Skill/Skill";
+import UpButton from "./UpButton/UpButton";
+import SobreMi from './SobreMi/SobreMi';
 
 const Layout = (): JSX.Element => {
-    const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
     const { i18n } = useTranslation("global");
 
     useEffect(() => {
@@ -22,10 +22,11 @@ const Layout = (): JSX.Element => {
 
     return (
         <div className="App">
-            <BarraNav isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            <BarraNav />
             <SeccionHero />
             <Skill />
-            <SeccionExperiencia/>
+            <SobreMi/>
+            <SeccionExperiencia />
             <SeccionProyectos />
             <Contacto />
             <Footer />

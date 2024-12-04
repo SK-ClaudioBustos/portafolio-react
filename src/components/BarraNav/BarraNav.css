@@ -2,14 +2,15 @@
   padding: 2rem;
   background-color: #f8f9fa;
 }
-.navbar .navbar-brand {
+
+.navbar-brand {
   height: 50px;
   width: 50px;
   background-color: #f8f9fa;
   border-radius: 50%;
   cursor: unset;
 }
-.navbar .nav-link.active {
+.nav-link.active {
   color: #000;
 }
 
@@ -18,18 +19,20 @@
   border-radius: 10%;
 }
 
-.nav-dark {
-  background-color: #000;
-}
-.nav-dark .navbar-toggler {
-  background-color: #fff;
-}
-.nav-dark .navbar-brand {
-  color: #000;
-}
-.nav-dark .nav-link {
-  color: #fff;
-}
-.nav-dark .nav-link.active {
-  color: #aeaeae;
+body.dark {
+  .navbar {
+    background-color: #000;
+  }
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  .navbar-brand {
+    color: #000;
+  }
+  .nav-link {
+    color: #fff;
+  }
+  .nav-link.active {
+    color: #aeaeae;
+  }
 }

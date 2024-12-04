@@ -1,22 +1,29 @@
 .sobre-mi {
-  height: 500px;
+  min-height: 300px;
   padding: 10px;
   background-color: #1b1b32;
   color: #fff;
+  margin: 100px 0;
 }
+
 .sobre-mi .contenedor {
   max-width: 600px;
 }
+
 .sobre-mi .contenedor .seccion-titulo {
+  color: #fff;
   font-size: 2rem;
   padding: 15px 0;
   font-family: system-ui, Arial;
   font-weight: 900;
 }
+
 .sobre-mi .contenedor .seccion-texto {
   font-size: 1.2rem;
 }
 
-.mi-dark {
-  background-color: #000;
+body.dark {
+  .sobre-mi {
+    background-color: #000;
+  }
 }

@@ -1,8 +1,5 @@
-html, body {
-  scroll-behavior: smooth;
-}
-
 .up-div {
+  cursor: pointer;
   display: none;
   bottom: 40px;
   right: 40px;
@@ -14,13 +11,8 @@ html, body {
   position: fixed;
   z-index: 2;
 }
-.up-div .up-a {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  z-index: 5;
-}
-.up-div .up-icon {
+
+.up-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,10 +22,12 @@ html, body {
   color: #000;
 }
 
-.up-dark {
-  background-color: #141313;
-  border: 3px solid #f8f9fa;
-}
-.up-dark .up-icon {
-  color: #f8f9fa;
+body.dark {
+  .up-div {
+    background-color: #141313;
+    border: 3px solid #f8f9fa;
+  }
+  .up-icon {
+    color: #f8f9fa;
+  }
 }

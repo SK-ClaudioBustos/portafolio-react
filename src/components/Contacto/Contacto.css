@@ -1,43 +1,47 @@
 .contacto {
+  margin-bottom: 50px;
   color: #fff;
 }
+
 .contacto .container {
   max-width: 1100px;
   min-height: 200px;
   padding: 20px;
 }
-.contacto .container .contacto-div {
+
+.contacto-div {
   max-width: 1100px;
   min-height: 200px;
   padding: 20px;
   background-color: #0d6efd;
   border-radius: 10px;
 }
-.contacto .container .contacto-div .row {
+
+.contacto-div .row {
   width: 100%;
   display: flex;
   align-items: center;
 }
-.contacto .container .contacto-div .row .seccion-titulo {
+
+.seccion-titulo-contacto {
+  color: #fff;
   font-size: 2rem;
   padding: 15px 0;
   font-family: system-ui, Arial;
   font-weight: 900;
 }
-@media (max-width: 472px) {
-  .contacto .container .contacto-div .row .seccion-titulo {
-    font-size: 1.5rem;
-  }
-}
-.contacto .container .contacto-div .row .descripcion {
+
+.descripcion {
   color: #fff;
   font-size: 1.2rem;
 }
-.contacto .container .contacto-div .row div .anchorContact {
+
+.anchorContact {
   color: transparent;
   cursor: default;
 }
-.contacto .container .contacto-div .row div .anchorContact button {
+
+.anchorContact button {
   color: #fff;
   font-weight: bold;
   background-color: transparent;
@@ -47,40 +51,58 @@
   border-radius: 100px;
   transition: all 0.2s ease-in-out;
 }
-.contacto .container .contacto-div .row div .anchorContact button:hover {
+
+.anchorContact button:hover {
   background-color: #fff;
   color: #000;
 }
-.contacto .container .contacto-div .row div .anchorContact button:hover i {
+
+.anchorContact button:hover i {
   color: #000;
 }
-.contacto .container .contacto-div .row div .anchorContact button i {
+
+.anchorContact button i {
   color: #fff;
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
 
-.cont-dark {
-  color: #f5f6f7;
-  background-color: #0a0a23;
+@media (max-width: 472px) {
+  .seccion-titulo {
+    font-size: 1.5rem;
+  }
 }
-.cont-dark .container .contacto-div {
-  background-color: #1b1b32;
-}
-.cont-dark .container .contacto-div .row .descripcion {
-  color: #f5f6f7;
-}
-.cont-dark .container .contacto-div .row div button {
-  color: #f5f6f7;
-  border: 2px solid #f5f6f7;
-}
-.cont-dark .container .contacto-div .row div button:hover {
-  background-color: #141313;
-  color: #f5f6f7;
-}
-.cont-dark .container .contacto-div .row div button:hover i {
-  color: #f5f6f7;
-}
-.cont-dark .container .contacto-div .row div button i {
-  color: #f5f6f7;
+
+body.dark {
+
+  .contacto {
+    color: #f5f6f7;
+    background-color: #0a0a23;
+  }
+
+  .contacto-div {
+    background-color: #1b1b32;
+  }
+
+  .contacto-div .row .descripcion {
+    color: #f5f6f7;
+  }
+
+  .contacto-div .row div button {
+    color: #f5f6f7;
+    border: 2px solid #f5f6f7;
+  }
+
+  .contacto-div .row div button:hover {
+    background-color: #141313;
+    color: #f5f6f7;
+  }
+
+  .contacto-div .row div button:hover i {
+    color: #f5f6f7;
+  }
+
+  .contacto-div .row div button i {
+    color: #f5f6f7;
+  }
 }

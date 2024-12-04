@@ -2,43 +2,45 @@
   background-color: #fff;
   min-height: 450px;
   text-align: center;
+
+  .hero-principal {
+    padding: 3rem;
+
+    .hero-imagen {
+      width: 150px;
+      height: auto;
+      margin: 20px;
+      border-radius: 5px;
+      border: 1px solid #0a0a23;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-family: system-ui, Arial;
+      font-weight: 900;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      color: #615151;
+    }
+  }
 }
 
-.hero .hero-principal {
-  padding: 3rem;
-}
+body.dark {
+  .hero {
+    background-color: #0a0a23;
+  }
 
-.hero .hero-principal .hero-imagen {
-  width: 150px;
-  height: auto;
-  margin: 20px;
-  border-radius: 5px;
-  border: 1px solid #0a0a23;
-}
+  .hero-imagen {
+    border: 1px solid #f1f1f1;
+  }
 
-.hero .hero-principal h1 {
-  font-size: 2.5rem;
-  font-family: system-ui, Arial;
-  font-weight: 900;
-}
+  .hero-principal h1 {
+    color: #f8f9fa;
+  }
 
-.hero .hero-principal h2 {
-  font-size: 1.5rem;
-  color: #615151;
-}
-
-.hero-dark {
-  background-color: #0a0a23;
-}
-
-.hero-dark .hero-principal .hero-imagen {
-  border: 1px solid #f1f1f1;
-}
-
-.hero-dark .hero-principal h1 {
-  color: #f8f9fa;
-}
-
-.hero-dark .hero-principal h2 {
-  color: #f5f6f7;
+  .hero-principal h2 {
+    color: #f5f6f7;
+  }
 }
