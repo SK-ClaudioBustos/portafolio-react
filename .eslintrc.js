@@ -40,6 +40,7 @@ module.exports = {
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-trailing-spaces": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
         "eol-last": 0,
     }
 }
