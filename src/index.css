@@ -1,4 +1,7 @@
-html,
 body {
-    scroll-behavior: smooth;
+    background-color: #fff;
+}
+
+body.dark {
+    background-color: #0a0a23;
 }

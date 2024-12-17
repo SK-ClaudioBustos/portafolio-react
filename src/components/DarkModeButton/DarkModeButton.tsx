@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useEffect } from "react";
+import { useDarkModeStore } from "../../store/darkMode.store";
 import mode from "../functions/dark-mode";
+import { verifyDarkMode } from "../functions/verifyDarkMode";
 import "./DarkModeButton.css";
 
 function DarkModeButton(): JSX.Element {
-    const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+    const isDarkMode = useDarkModeStore((state) => state.darkMode);
+    const setIsDarkMode = useDarkModeStore((state) => state.setDarkMode);
+
+    useEffect(() => {
+        verifyDarkMode(setIsDarkMode);
+    }, []);
+
     const handleChange = (): void => {
-        const state = isDarkMode ? "true" : "false";
-        setIsDarkMode(!isDarkMode);
-        localStorage.setItem("darkMode", state);
-        mode(isDarkMode);
+        const newDarkModeState = !isDarkMode;
+        setIsDarkMode(newDarkModeState);
+        mode(newDarkModeState);
     }
 
     return (

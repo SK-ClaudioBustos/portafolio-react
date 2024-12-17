@@ -41,6 +41,7 @@ module.exports = {
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-trailing-spaces": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-trailing-spaces": "off",
         "eol-last": 0,
     }
 }

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./Footer.css";
 
-function Footer(): JSX.Element {
+export function Footer(): JSX.Element {
   const { t } = useTranslation("global");
   return (
     <footer id="final" className="d-flex flex-column align-items-center justify-content-center">
@@ -21,5 +21,3 @@ function Footer(): JSX.Element {
     </footer>
   );
 }
-
-export default Footer;

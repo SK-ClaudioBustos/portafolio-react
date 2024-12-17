@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./SeccionHero.css";
 
-function SeccionHero(): JSX.Element {
+export function SeccionHero(): JSX.Element {
     const { t } = useTranslation("global");
     // no cambies esto, es para que pueda cargar el archiv SVG
     const photo = "profile";
@@ -15,5 +15,3 @@ function SeccionHero(): JSX.Element {
         </section>
     );
 }
-
-export default SeccionHero;

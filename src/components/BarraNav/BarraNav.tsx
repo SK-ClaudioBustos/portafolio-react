@@ -6,7 +6,7 @@ import DarkModeButton from "../DarkModeButton/DarkModeButton";
 import LangButton from "../Langbutton/LangButton";
 import "./BarraNav.css";
 
-function BarraNav(): JSX.Element {
+export function BarraNav(): JSX.Element {
   const { t } = useTranslation("global");
   return (
     <Navbar id="inicio" className="navbar" expand="lg">
@@ -34,5 +34,3 @@ function BarraNav(): JSX.Element {
     </Navbar>
   );
 }
-
-export default BarraNav;

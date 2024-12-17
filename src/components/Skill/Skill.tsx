@@ -3,7 +3,7 @@ import SkillItem from "../SkillItem/SkillItem";
 import useGetData from "./itemsData";
 import "./Skill.css";
 
-function Skill(): JSX.Element {
+export function Skill(): JSX.Element {
   const { t } = useTranslation("global");
   const itemsData = useGetData();
   return (
@@ -27,5 +27,3 @@ function Skill(): JSX.Element {
     </section>
   );
 }
-
-export default Skill;

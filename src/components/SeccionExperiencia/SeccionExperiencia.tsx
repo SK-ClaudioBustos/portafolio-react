@@ -1,9 +1,9 @@
+import { useTranslation } from "react-i18next";
 import ExperienciaCard from "./ExperienciaCard/ExperienciaCard";
 import useGetData from "./experienciasData";
-import { useTranslation } from "react-i18next";
 import "./SeccionExperiencia.css";
 
-const SeccionExperiencia = (): JSX.Element => {
+export const SeccionExperiencia = (): JSX.Element => {
     const { t } = useTranslation("global");
 
     const data = useGetData();
@@ -21,5 +21,3 @@ const SeccionExperiencia = (): JSX.Element => {
         </section>
     )
 }
-
-export default SeccionExperiencia

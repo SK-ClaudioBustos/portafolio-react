@@ -3,7 +3,7 @@ import useGetData from "./proyect_data";
 import { useTranslation } from "react-i18next";
 import "./SectionProyectos.css";
 
-function SectionProyectos(): JSX.Element {
+export function SectionProyectos(): JSX.Element {
     const data = useGetData();
     const { t } = useTranslation("global");
     return (
@@ -28,5 +28,3 @@ function SectionProyectos(): JSX.Element {
         </section>
     );
 }
-
-export default SectionProyectos;

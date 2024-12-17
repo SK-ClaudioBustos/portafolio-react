@@ -1,14 +1,9 @@
-function mode(state: boolean): void {
-    const btnSwitch = document.querySelector('#dark-mode-button');
+function mode(darkMode: boolean): void {
     const body = document.body;
 
-    if (state) {
-        btnSwitch?.classList.add("active");
-        body.style.backgroundColor = "#0a0a23";
+    if (darkMode) {
         body.classList.add("dark");
     } else {
-        btnSwitch?.classList.remove("active");
-        body.style.backgroundColor = "#fff";
         body.classList.remove("dark");
     }
 }

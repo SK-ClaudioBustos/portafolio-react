@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./SobreMi.css";
 
-function SobreMi(): JSX.Element {
+export function SobreMi(): JSX.Element {
   const { t } = useTranslation("global");
   return (
     <section id="section-sobre-mi" className="sobre-mi">
@@ -12,5 +12,3 @@ function SobreMi(): JSX.Element {
     </section>
   );
 }
-
-export default SobreMi

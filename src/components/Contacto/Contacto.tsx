@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./Contacto.css";
 
-function Contacto(): JSX.Element {
+export function Contacto(): JSX.Element {
   const { t } = useTranslation("global");
   return (
     <section id="section-contacto" className="contacto">
@@ -32,5 +32,3 @@ function Contacto(): JSX.Element {
     </section>
   );
 }
-
-export default Contacto;

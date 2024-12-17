@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./UpButton.css";
 
-function UpButton(): JSX.Element {
+export function UpButton(): JSX.Element {
     useEffect(() => {
         window.onscroll = function () {
             const alturaPagina = window.scrollY;
@@ -21,10 +21,10 @@ function UpButton(): JSX.Element {
 
         scrollUpButton?.addEventListener('click', () => {
             window.scrollTo({
-              top: 0,
-              behavior: 'smooth'
+                top: 0,
+                behavior: 'smooth'
             });
-          });
+        });
     }, []);
 
     return (
@@ -33,5 +33,3 @@ function UpButton(): JSX.Element {
         </div>
     );
 }
-
-export default UpButton;
