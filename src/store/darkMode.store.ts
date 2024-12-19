@@ -1,16 +1,24 @@
-import { create } from 'zustand';
+import { create, StateCreator } from 'zustand';
 import { persist } from "zustand/middleware";
-interface DarkModeStore {
+
+interface DarkModeState {
     darkMode: boolean
+}
+
+interface Actions {
     setDarkMode: (boolean) => void
 }
 
-export const useDarkModeStore = create<DarkModeStore>()(
+type StorageData = DarkModeState & Actions;
+
+const storeApi: StateCreator<StorageData> = (set, get) => ({
+    darkMode: get()?.darkMode ?? false,
+    setDarkMode: (newDarkModeState) => { set(() => ({ darkMode: newDarkModeState })) }
+});
+
+export const useDarkModeStore = create<StorageData>()(
     persist(
-        (set, get) => ({
-            darkMode: false,
-            setDarkMode: (newDarkModeState) => { set(() => ({ darkMode: newDarkModeState })) }
-        }),
+        storeApi,
         { name: "darkMode" }
     )
 );

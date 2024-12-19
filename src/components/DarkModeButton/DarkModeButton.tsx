@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useDarkModeStore } from "../../store/darkMode.store";
 import mode from "../functions/dark-mode";
-import { verifyDarkMode } from "../functions/verifyDarkMode";
 import "./DarkModeButton.css";
 
 function DarkModeButton(): JSX.Element {
@@ -9,10 +8,10 @@ function DarkModeButton(): JSX.Element {
     const setIsDarkMode = useDarkModeStore((state) => state.setDarkMode);
 
     useEffect(() => {
-        verifyDarkMode(setIsDarkMode);
+        mode(isDarkMode);
     }, []);
 
-    const handleChange = (): void => {
+    const handleChange = () => {
         const newDarkModeState = !isDarkMode;
         setIsDarkMode(newDarkModeState);
         mode(newDarkModeState);
