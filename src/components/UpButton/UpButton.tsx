@@ -1,30 +1,32 @@
 import { useEffect } from "react";
 import "./UpButton.css";
 
-export function UpButton(): JSX.Element {
-    useEffect(() => {
-        window.onscroll = function () {
-            const alturaPagina = window.scrollY;
-            const upDiv = document.getElementById("up-div");
-            if (alturaPagina >= 200) {
-                if (upDiv) {
-                    upDiv.style.display = 'flex';
-                    upDiv.style.alignItems = "center";
-                    upDiv.style.justifyContent = "center";
-                }
-            } else {
-                if (upDiv) upDiv.style.display = "none";
-            }
-        };
+const scrollUpButton = document.getElementById("up-div");
 
-        const scrollUpButton = document.getElementById("up-div");
+export function UpButton() {
+    const handleScroll = () => {
+        const alturaPagina = window.scrollY;
+        if (scrollUpButton && alturaPagina >= 200) {
+            scrollUpButton.style.display = 'flex';
+        } else {
+            if (scrollUpButton) scrollUpButton.style.display = "none";
+        }
+    };
 
-        scrollUpButton?.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+    const setScroll = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        scrollUpButton?.addEventListener('click', setScroll);
+        return () => {
+            removeEventListener('scroll', handleScroll);
+            removeEventListener('click', setScroll);
+        };
     }, []);
 
     return (

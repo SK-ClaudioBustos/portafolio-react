@@ -1,25 +1,30 @@
 .up-div {
-  cursor: pointer;
   display: none;
-  bottom: 40px;
-  right: 40px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 3px solid #000;
-  position: fixed;
-  z-index: 2;
-}
-
-.up-icon {
-  display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 50%;
   height: 50px;
   width: 50px;
-  color: #000;
+  
+  z-index: 2;
+  cursor: pointer;
+
+  & .up-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: #000;
+  }
 }
 
 body.dark {
@@ -27,6 +32,7 @@ body.dark {
     background-color: #141313;
     border: 3px solid #f8f9fa;
   }
+
   .up-icon {
     color: #f8f9fa;
   }
